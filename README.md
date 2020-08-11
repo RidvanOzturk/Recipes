@@ -1,4 +1,4 @@
-# yemek_tarif
+# Recipes
 
 A new Flutter project.
 
