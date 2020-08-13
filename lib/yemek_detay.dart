@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/models/yemek.dart';
-import 'package:yemek_tarif/yemek_liste.dart';
+import 'package:yemek_tarif/yemek_icindekiler.dart';
+
+import 'models/yemek_icindekiler.dart';
 
 // ignore: must_be_immutable
 class YemekDetay extends StatelessWidget {
   int gelenIndex;
-  Yemek secilenYemekTuru;
+  YemekDetayIci secilenYemekTuru;
   YemekDetay(this.gelenIndex);
   @override
   Widget build(BuildContext context) {
-    secilenYemekTuru = YemekListesi.tumYemekler[gelenIndex];
+    secilenYemekTuru = YemekIcindekiler.icindekiler[gelenIndex];
     return Scaffold(
       body: CustomScrollView(
         primary: false,
@@ -21,10 +22,10 @@ class YemekDetay extends StatelessWidget {
             backgroundColor: Colors.pink,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                "images/" + secilenYemekTuru.yemekBuyukResim,
+                "images/" + secilenYemekTuru.buyukResimYemekici,
                 fit: BoxFit.cover,
               ),
-              title: Text(secilenYemekTuru.yemekAdi + " ve İçindekiler"),
+              title: Text(secilenYemekTuru.yemekDetayIci),
             ),
           ),
           SliverToBoxAdapter(

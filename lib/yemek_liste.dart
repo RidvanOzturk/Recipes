@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/utils/string.dart';
-import 'package:yemek_tarif/yemek_hangi.dart';
+import 'package:yemek_tarif/utils/data.dart';
 
 import 'models/yemek.dart';
 
@@ -23,10 +22,8 @@ class YemekListesi extends StatelessWidget {
     for (int i = 0; i < 5; i++) {
       String kucukResim =
           Strings.YEMEK_KATEGORILERI_RESMI[i].toLowerCase() + ".png";
-      String buyukResim = Strings.ANA_YEMEK_RESMI[i].toLowerCase() + ".jpg";
 
-      Yemek eklenecekYemek = Yemek(Strings.YEMEK_KATEGORILERI[i],
-          Strings.YEMEK_TARIF[i], kucukResim, buyukResim);
+      Yemek eklenecekYemek = Yemek(Strings.YEMEK_KATEGORILERI[i], kucukResim);
       yemekler.add(eklenecekYemek);
     }
     return yemekler;
@@ -50,8 +47,7 @@ class YemekListesi extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListTile(
-          onTap: () => Navigator.push(context,
-              MaterialPageRoute(builder: (context) => YemekIcindekiler())),
+          onTap: () => Navigator.pushNamed(context, "/yemekIcindekiler/$index"),
           leading: Image.asset(
             "images/" + oAnListeyeEklenenYemekTuru.yemekKucukResim,
             width: 64,
