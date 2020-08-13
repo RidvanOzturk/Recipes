@@ -1,64 +1,59 @@
 import 'package:flutter/material.dart';
+import 'package:yemek_tarif/models/yemek_icindekiler.dart';
 import 'package:yemek_tarif/utils/string.dart';
-import 'package:yemek_tarif/yemek_hangi.dart';
 
-import 'models/yemek.dart';
-
-class YemekListesi extends StatelessWidget {
-  static List<Yemek> tumYemekler;
+class YemekIcindekiler extends StatelessWidget {
+  static List<YemekDetayIci> icindekiler;
   @override
   Widget build(BuildContext context) {
-    tumYemekler = veriKaynaginiHazirla();
+    icindekiler = yemekVeriKaynagi();
 
     return Scaffold(
       appBar: AppBar(
         title: Text("Yemek Tarifleri"),
       ),
-      body: ListeyiHazirla(),
+      body: ListeyiHazirlaIci(),
     );
   }
 
-  List<Yemek> veriKaynaginiHazirla() {
-    List<Yemek> yemekler = [];
+  List<YemekDetayIci> yemekVeriKaynagi() {
+    List<YemekDetayIci> yemeklerIci = [];
     for (int i = 0; i < 5; i++) {
-      String kucukResim =
-          Strings.YEMEK_KATEGORILERI_RESMI[i].toLowerCase() + ".png";
-      String buyukResim = Strings.ANA_YEMEK_RESMI[i].toLowerCase() + ".jpg";
+      String kucukResimIci = Strings.ANA_YEMEK_RESMI[i].toLowerCase() + ".jpg";
 
-      Yemek eklenecekYemek = Yemek(Strings.YEMEK_KATEGORILERI[i],
-          Strings.YEMEK_TARIF[i], kucukResim, buyukResim);
-      yemekler.add(eklenecekYemek);
+      YemekDetayIci eklenecekYemekIci =
+          YemekDetayIci(Strings.ANA_YEMEK[i], kucukResimIci);
+      yemeklerIci.add(eklenecekYemekIci);
     }
-    return yemekler;
+    return yemeklerIci;
   }
 
   // ignore: non_constant_identifier_names
-  Widget ListeyiHazirla() {
+  Widget ListeyiHazirlaIci() {
     return ListView.builder(
       itemBuilder: (BuildContext context, int index) {
-        return tekSatirYemek(context, index);
+        return tekSatirYemekIci(context, index);
       },
-      itemCount: tumYemekler.length,
+      itemCount: icindekiler.length,
     );
   }
 
-  Widget tekSatirYemek(BuildContext context, int index) {
-    Yemek oAnListeyeEklenenYemekTuru = tumYemekler[index];
+  Widget tekSatirYemekIci(BuildContext context, int index) {
+    YemekDetayIci oAnListeyeEklenenYemekTuru = icindekiler[index];
     return Card(
       color: Colors.grey.shade200,
       elevation: 5,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListTile(
-          onTap: () => Navigator.push(context,
-              MaterialPageRoute(builder: (context) => YemekIcindekiler())),
+          onTap: () => Navigator.pushNamed(context, "/yemekDetay/$index"),
           leading: Image.asset(
-            "images/" + oAnListeyeEklenenYemekTuru.yemekKucukResim,
+            "images/" + oAnListeyeEklenenYemekTuru.kucukResimYemekIci,
             width: 64,
             height: 64,
           ),
           title: Text(
-            oAnListeyeEklenenYemekTuru.yemekAdi,
+            oAnListeyeEklenenYemekTuru.yemekDetayIci,
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w400,
@@ -67,7 +62,7 @@ class YemekListesi extends StatelessWidget {
           subtitle: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
-              oAnListeyeEklenenYemekTuru.yemekAdi,
+              oAnListeyeEklenenYemekTuru.yemekDetayIci,
               style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
