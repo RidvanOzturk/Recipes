@@ -33,7 +33,10 @@ class MyApp extends StatelessWidget {
         }
         return null;
       },
-      theme: ThemeData(primarySwatch: Colors.pink),
+      theme: ThemeData(
+        primaryColor: Colors.orange.shade400,
+        scaffoldBackgroundColor: Colors.grey.shade50,
+      ),
     );
   }
 }

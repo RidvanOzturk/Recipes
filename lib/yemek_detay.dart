@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/yemek_icindekiler.dart';
+import 'package:flutter_html/flutter_html.dart';
 
+import 'package:yemek_tarif/yemek_icindekiler.dart';
 import 'models/yemek_icindekiler.dart';
 
 // ignore: must_be_immutable
@@ -19,21 +20,23 @@ class YemekDetay extends StatelessWidget {
             expandedHeight: 250,
             pinned: true,
             primary: true,
-            backgroundColor: Colors.pink,
+            backgroundColor: Colors.orange.shade400,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
                 "images/" + secilenYemekTuru.buyukResimYemekici,
                 fit: BoxFit.cover,
               ),
-              title: Text(secilenYemekTuru.yemekDetayIci),
+              title: Text(
+                secilenYemekTuru.yemekDetayIci,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
           SliverToBoxAdapter(
             child: SingleChildScrollView(
-              child: Text(
-                secilenYemekTuru.yemekTarif,
-                style: TextStyle(fontSize: 18, color: Colors.black),
-              ),
+              child: Html(data: secilenYemekTuru.yemekTarif),
             ),
           ),
         ],

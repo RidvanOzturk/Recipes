@@ -11,7 +11,10 @@ class YemekListesi extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Yemek Tarifleri"),
+        title: Text(
+          "Yemek Tarifleri",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListeyiHazirla(),
     );
@@ -42,7 +45,7 @@ class YemekListesi extends StatelessWidget {
   Widget tekSatirYemek(BuildContext context, int index) {
     Yemek oAnListeyeEklenenYemekTuru = tumYemekler[index];
     return Card(
-      color: Colors.grey.shade200,
+      color: Colors.grey.shade100,
       elevation: 5,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -56,21 +59,24 @@ class YemekListesi extends StatelessWidget {
           title: Text(
             oAnListeyeEklenenYemekTuru.yemekAdi,
             style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w400,
-                color: Colors.pink.shade500),
+                fontSize: 23,
+                fontWeight: FontWeight.w600,
+                color: Colors.brown.shade500),
           ),
           subtitle: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
-              oAnListeyeEklenenYemekTuru.yemekAdi,
+              "Herkes için yemek farkıyla " +
+                  oAnListeyeEklenenYemekTuru.yemekAdi.toLowerCase() +
+                  "...",
               style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black38),
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.brown.shade400),
             ),
           ),
-          trailing: Icon(Icons.arrow_forward_ios, color: Colors.pink),
+          trailing: Icon(Icons.keyboard_tab, color: Colors.brown),
         ),
       ),
     );

@@ -12,7 +12,10 @@ class YemekIcindekiler extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Yemek Tarifleri"),
+        title: Text(
+          "Yemek Tarifleri",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListeyiHazirlaIci(),
     );
@@ -20,7 +23,7 @@ class YemekIcindekiler extends StatelessWidget {
 
   List<YemekDetayIci> yemekVeriKaynagi() {
     List<YemekDetayIci> yemeklerIci = [];
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 7; i++) {
       String kucukResimIci = Strings.ANA_YEMEK_RESMI[i].toLowerCase() + ".jpg";
       String buyukResimIci =
           Strings.ANA_YEMEK_RESMI[i].toLowerCase() + "_buyuk.jpg";
@@ -44,7 +47,7 @@ class YemekIcindekiler extends StatelessWidget {
   Widget tekSatirYemekIci(BuildContext context, int index) {
     YemekDetayIci oAnListeyeEklenenYemekTuru = icindekiler[index];
     return Card(
-      color: Colors.grey.shade200,
+      color: Colors.grey.shade100,
       elevation: 5,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -59,21 +62,24 @@ class YemekIcindekiler extends StatelessWidget {
           title: Text(
             oAnListeyeEklenenYemekTuru.yemekDetayIci,
             style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w400,
-                color: Colors.pink.shade500),
+                fontSize: 23,
+                fontWeight: FontWeight.w600,
+                color: Colors.brown.shade500),
           ),
           subtitle: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
-              oAnListeyeEklenenYemekTuru.yemekDetayIci,
+              "Herkes için yemek farkıyla " +
+                  oAnListeyeEklenenYemekTuru.yemekDetayIci.toLowerCase() +
+                  "...",
               style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black38),
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.brown.shade400),
             ),
           ),
-          trailing: Icon(Icons.arrow_forward_ios, color: Colors.pink),
+          trailing: Icon(Icons.keyboard_tab, color: Colors.brown),
         ),
       ),
     );
