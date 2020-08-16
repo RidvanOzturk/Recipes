@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/models/yemek_icindekiler.dart';
-import 'package:yemek_tarif/utils/data.dart';
+import 'package:yemek_tarif/utils/data_loader.dart';
 
+import 'models/detailParams.dart';
+import 'models/food.dart';
+
+// ignore: must_be_immutable
 class YemekIcindekiler extends StatelessWidget {
-  static List<YemekDetayIci> icindekiler;
-
-  YemekIcindekiler(int index);
+  static List<Food> icindekiler;
+  int gelenIndex;
+  YemekIcindekiler(this.gelenIndex);
   @override
   Widget build(BuildContext context) {
-    icindekiler = yemekVeriKaynagi();
+    icindekiler = DataLoader.yemekIciListesi[gelenIndex];
 
     return Scaffold(
       appBar: AppBar(
@@ -19,19 +22,6 @@ class YemekIcindekiler extends StatelessWidget {
       ),
       body: ListeyiHazirlaIci(),
     );
-  }
-
-  List<YemekDetayIci> yemekVeriKaynagi() {
-    List<YemekDetayIci> yemeklerIci = [];
-    for (int i = 0; i < 7; i++) {
-      String kucukResimIci = Strings.ANA_YEMEK_RESMI[i].toLowerCase() + ".jpg";
-      String buyukResimIci =
-          Strings.ANA_YEMEK_RESMI[i].toLowerCase() + "_buyuk.jpg";
-      YemekDetayIci eklenecekYemekIci = YemekDetayIci(Strings.ANA_YEMEK[i],
-          kucukResimIci, buyukResimIci, Strings.YEMEK_TARIF[i]);
-      yemeklerIci.add(eklenecekYemekIci);
-    }
-    return yemeklerIci;
   }
 
   // ignore: non_constant_identifier_names
@@ -45,7 +35,7 @@ class YemekIcindekiler extends StatelessWidget {
   }
 
   Widget tekSatirYemekIci(BuildContext context, int index) {
-    YemekDetayIci oAnListeyeEklenenYemekTuru = icindekiler[index];
+    Food oAnListeyeEklenenYemekTuru = icindekiler[index];
     return Card(
       color: Colors.grey.shade100,
       elevation: 5,
@@ -53,14 +43,14 @@ class YemekIcindekiler extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: ListTile(
           onTap: () => Navigator.pushNamed(
-              context, "/yemekIcindekiler/yemekDetay/$index"),
+              context, "/yemekIcindekiler/yemekDetay", arguments: DetailParams(gelenIndex, index)),
           leading: Image.asset(
-            "images/" + oAnListeyeEklenenYemekTuru.kucukResimYemekIci,
+            oAnListeyeEklenenYemekTuru.image,
             width: 64,
             height: 64,
           ),
           title: Text(
-            oAnListeyeEklenenYemekTuru.yemekDetayIci,
+            oAnListeyeEklenenYemekTuru.name,
             style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.w600,
@@ -70,7 +60,7 @@ class YemekIcindekiler extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
               "Herkes için yemek farkıyla " +
-                  oAnListeyeEklenenYemekTuru.yemekDetayIci.toLowerCase() +
+                  oAnListeyeEklenenYemekTuru.name +
                   "...",
               style: TextStyle(
                   fontSize: 16,

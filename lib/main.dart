@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yemek_tarif/models/detailParams.dart';
 import 'package:yemek_tarif/yemek_detay.dart';
 import 'package:yemek_tarif/yemek_icindekiler.dart';
 import 'package:yemek_tarif/yemek_liste.dart';
@@ -18,18 +19,17 @@ class MyApp extends StatelessWidget {
       },
       onGenerateRoute: (RouteSettings settings) {
         List<String> pathElemanlari = settings.name.split("/");
-        //  "/yemekIcindekiler/$index"
-        if (pathElemanlari[1] == 'yemekIcindekiler' &&
-            pathElemanlari[2] != 'yemekDetay') {
+        
+        if (pathElemanlari[1] == 'yemekIcindekiler' && pathElemanlari[2] != 'yemekDetay') {
           return MaterialPageRoute(
               builder: (context) =>
                   YemekIcindekiler(int.parse(pathElemanlari[2])));
         }
-        //  "/yemekIcindekiler/yemekDetay/$index"
-        if (pathElemanlari[1] == 'yemekIcindekiler' &&
-            pathElemanlari[2] == 'yemekDetay') {
+
+        if (pathElemanlari[1] == 'yemekIcindekiler' && pathElemanlari[2] == 'yemekDetay') {
+          DetailParams parameters = settings.arguments as DetailParams;
           return MaterialPageRoute(
-              builder: (context) => YemekDetay(int.parse(pathElemanlari[3])));
+              builder: (context) => YemekDetay(parameters.categoryId, parameters.recipeId));
         }
         return null;
       },

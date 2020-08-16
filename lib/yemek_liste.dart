@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/utils/data.dart';
+import 'package:yemek_tarif/utils/data_loader.dart';
 
-import 'models/yemek.dart';
+import 'models/food.dart';
 
 class YemekListesi extends StatelessWidget {
-  static List<Yemek> tumYemekler;
+  static List<Food> tumYemekler;
   @override
   Widget build(BuildContext context) {
-    tumYemekler = veriKaynaginiHazirla();
+    tumYemekler = DataLoader.yemekListesi;
 
     return Scaffold(
       appBar: AppBar(
@@ -18,18 +18,6 @@ class YemekListesi extends StatelessWidget {
       ),
       body: ListeyiHazirla(),
     );
-  }
-
-  List<Yemek> veriKaynaginiHazirla() {
-    List<Yemek> yemekler = [];
-    for (int i = 0; i < 5; i++) {
-      String kucukResim =
-          Strings.YEMEK_KATEGORILERI_RESMI[i].toLowerCase() + ".png";
-
-      Yemek eklenecekYemek = Yemek(Strings.YEMEK_KATEGORILERI[i], kucukResim);
-      yemekler.add(eklenecekYemek);
-    }
-    return yemekler;
   }
 
   // ignore: non_constant_identifier_names
@@ -43,7 +31,7 @@ class YemekListesi extends StatelessWidget {
   }
 
   Widget tekSatirYemek(BuildContext context, int index) {
-    Yemek oAnListeyeEklenenYemekTuru = tumYemekler[index];
+    Food oAnListeyeEklenenYemekTuru = tumYemekler[index];
     return Card(
       color: Colors.grey.shade100,
       elevation: 5,
@@ -52,12 +40,12 @@ class YemekListesi extends StatelessWidget {
         child: ListTile(
           onTap: () => Navigator.pushNamed(context, "/yemekIcindekiler/$index"),
           leading: Image.asset(
-            "images/" + oAnListeyeEklenenYemekTuru.yemekKucukResim,
+            oAnListeyeEklenenYemekTuru.image,
             width: 64,
             height: 64,
           ),
           title: Text(
-            oAnListeyeEklenenYemekTuru.yemekAdi,
+            oAnListeyeEklenenYemekTuru.name,
             style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.w600,
@@ -67,7 +55,7 @@ class YemekListesi extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
               "Herkes için yemek farkıyla " +
-                  oAnListeyeEklenenYemekTuru.yemekAdi.toLowerCase() +
+                  oAnListeyeEklenenYemekTuru.name +
                   "...",
               style: TextStyle(
                   fontSize: 16,
