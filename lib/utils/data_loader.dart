@@ -44,10 +44,21 @@ class DataLoader {
       Food("Ankara Sarması", "ankarasarmasi"),
       Food("Burma Kadayıf", "burmakadayif"),
       Food("İrmik Helvası", "irmikhelvasi"),
-      Food("Kabak Tatlısı", "kabaktatlisi")
+      Food("Kabak Tatlısı", "kabaktatlisi"),
+      Food("Beyaz Çikolatalı Parfe", "beyazcikolataliparfe"),
+      Food("Çikolatalı Sufle", "cikolatalisufle")
     ],
-    [Food("Fava", "fava")],
-    [Food("Acılı Cevizli Sos", "acilicevizlisos")]
+    [
+      Food("Fava", "fava"),
+      Food("Havuç Tarator", "havuctarator"),
+      Food("Kısır", "kisir"),
+      Food("Patates Püresi", "patatespuresi"),
+      Food("Pembe Sultan", "pembesultan"),
+    ],
+    [
+      Food("Acılı Cevizli Sos", "acilicevizlisos"),
+      Food("Biber Turşusu", "bibertursusu")
+    ]
   ];
 
   static List<List<FoodDetail>> yemekDetay = [
@@ -551,18 +562,79 @@ class DataLoader {
               "<p>Tencerede yağı eritip, irmik ve fıstığı içine katın. Tahta kaşıkla devamlı karıştırarak orta hararetli ateşte 35-40 dakika kadar kavurun.</p>"
               "<p>Üzerine kaynar su ya da süt döküp, bir iki kere karıştırın, sonra vanilya ve şekeri de ilave edin, tencerenin ağzını kapatıp, çok hafif ateşte biraz pişirin.</p>"
               "<p>Sonra ateşi söndürüp demlenmeye bırakın, servis yaparken üzerini fıstık veya bademle süsleyip tarçın serpin.</p>"),
-              FoodDetail("Kabak Tatlısı", "kabaktatlisi", "<p><b>  Kabak Tatlısı Tarifi'nin Malzemeleri:</b></p>"
+      FoodDetail(
+          "Kabak Tatlısı",
+          "kabaktatlisi",
+          "<p><b>  Kabak Tatlısı Tarifi'nin Malzemeleri:</b></p>"
               "<ul>"
-"<li>1/2 adet Bal kabağı</li>"
-"<li>2 1/2 su bardağı Şeker</li>"
-"<li>1 su bardağı Ceviz içi</li></ul>"
-"<p><b>  Kabak Tatlısı Tarifi'nin Yapılışı:</b></p>"
-"<p>1. Kabak soyulur, yıkanır, dilimlenir.</p>"
-"<p>2. Yayvan bir tencereye, bir sıra kabak üzerine şeker, bir sıra kabak yine üzerine şeker şeklinde dizilir.</p>"
-"<p>Kapağı kapatılır, 3-4 saat şeker eriyinceye kadar bekletilir. </p>"
-"<p>3. Ateşe konur, kapağı kapalı olarak yumuşayıncaya ve suyunu çekinceye kadar hafif ateşte pişirilir.</p>"
-"<p>4. Soğuduktan sonra, servis tabağına alınır, üzerine çekilmiş ceviz konur.</p>"
-),
+              "<li>1/2 adet Bal kabağı</li>"
+              "<li>2 1/2 su bardağı Şeker</li>"
+              "<li>1 su bardağı Ceviz içi</li></ul>"
+              "<p><b>  Kabak Tatlısı Tarifi'nin Yapılışı:</b></p>"
+              "<p>1. Kabak soyulur, yıkanır, dilimlenir.</p>"
+              "<p>2. Yayvan bir tencereye, bir sıra kabak üzerine şeker, bir sıra kabak yine üzerine şeker şeklinde dizilir.</p>"
+              "<p>Kapağı kapatılır, 3-4 saat şeker eriyinceye kadar bekletilir. </p>"
+              "<p>3. Ateşe konur, kapağı kapalı olarak yumuşayıncaya ve suyunu çekinceye kadar hafif ateşte pişirilir.</p>"
+              "<p>4. Soğuduktan sonra, servis tabağına alınır, üzerine çekilmiş ceviz konur.</p>"),
+      FoodDetail(
+          "Beyaz Çikolatalı Parfe",
+          "beyazcikolataliparfe",
+          "<p><b>  Beyaz Çikolatalı Parfe Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>225 gr Beyaz Çikolata</li>"
+              "<li>2.5 Su Bardağı Süt Kreması</li>"
+              "<li>1/2 Su Bardağı Süt</li>"
+              "<li>5 Yumurta Sarısı</li>"
+              "<li>1 Çorba Kaşığı Tozşeker</li>"
+              "<li>1 Çay Bardağı Hindistan Cevizi</li>"
+              "<li>1 Su Bardağı Şam Fıstığı</li>"
+              "<p><li>Süsleme için:</li></p>"
+              "<li>225 gr Sade Çikolata</li>"
+              "<li>1 Su Bardağı Krema</li>"
+              "<li>1 Çorba Kaşığı Bal</li></ul>"
+              "<p><b>  Beyaz Çikolatalı Parfe Tarifi'nin Yapılışı:</b></p>"
+              "<p>Beyaz,çikolatayı küçük parçalara bölüp yarım su bardağı kremayla birlikte karıştırarak benmari usulü eritin.</p>"
+              "<p>Hindistan cevizini ekleyip karıştırın ve soğumaya bırakın.</p>"
+              "<p>1 su bardağı kremayı ayrı bir kapta koyulaşıncaya kadar çırpın. Beyaz çikolatalı karışıma ilave edin.</p>"
+              "<p>1 su bardağı krema ve yarım su bardağı sütü küçük bir tencerede kaynatın.</p>"
+              "<p>Tozşeker ve yumurta sarılarını derin bir kapta çırpın. </p>"
+              "<p>Çırpmaya ara vermeden kaynar sütü ilave edin.</p>"
+              "<p>Karışımı tencereye alıp kısık ateşte karıştırarak koyulaşıncaya dek 2-3 dakika pişirin.</p>"
+              "<p>Kaynamadan ateşten alın ve karıştırarak soğutun.</p>"
+              "<p>Şam fıstıklarını suda bekletip soyun. Dikdörtgen bir kalıbı streç folyo ile kaplayın. </p>"
+              "<p>Beyaz çikolatalı karışım ile yumurtalı karışımı çırpın. Yarısını cam kalıba alın ve buzlukta 2 saat bekletin.</p>"
+              "<p>Şam fıstıklarını yayıp üzerine kalan karışımı ekleyin. 8 saat daha buzlukta bekletin.</p>"
+              "<p>Süsleme için; sade çikolatayı benmari usulü eritin. Kremayı ayrı bir kapta ısıtın.</p>"
+              "<p>Ateşten alıp çikolata ve balı ekleyin, karıştırarak ılıtın. </p>"
+              "<p>Parfeyi servis tabağına çevirerek kalıptan çıkarın.</p>"
+              "<p>Streç folyoyu üzerinden alıp suya batırılmış keskin bir bıçakla dilimleyin. </p>"
+              "<p>Üzerini çikolata ile süsleyip hemen sevis yapın.</p>"),
+      FoodDetail(
+          "Çikolatalı Sufle",
+          "cikolatalisufle",
+          "<p><b>  Çikolatalı Sufle Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>Yarım su bardağı kakao</li>"
+              "<li>1 su bardağı süt</li>"
+              "<li>Bir buçuk çorba kaşığı tereyağı</li>"
+              "<li>3 çorba kaşığı un</li>"
+              "<li>4 adet yumurta</li>"
+              "<li>Bir buçuk su bardağı toz şeker</li>"
+              "<li>1 paket siyah çikolata</li>"
+              "<li>Bir tutam tuz ve vanilya</li>"
+              "<li>Bir miktar pudra şekeri</li></ul>"
+              "<p><b>  Çikolatalı Sufle Tarifi'nin Yapılışı:</b></p>"
+              "<p>Sufle hamuru için geniş bir tencereye bir buçuk çorba kaşığı yağı koyun. </p>"
+              "<p>Yağı erittikten sonra tencereye unu ilave edin. Sararana de kavurun. </p>"
+              "<p>Sütü azar azar una ilave edin.</p>"
+              "<p>Daha sonra toz şekeri, un vanilyayı, kakaoyu ve rendelenin çikolatayı da tencereye ekleyin.</p>"
+              "<p>Kaynamaya başladığında ayrı bir kap içinde çırptığınız yumurta sarılarını karışıma alın.</p>"
+              "<p>2 dakika sonra tencereyi ocaktan alın. </p>"
+              "<p>Ayrı bir kap içinde yumurta aklarını kar haline gelinceye dek hızlı bir şekilde çırpın.</p>"
+              "<p>Hazırladığınız hamur karıştırmaya devam ederek yumurta aklarının üzerine ilave edin.</p>"
+              "<p>Sufle kaplarını yağlayıp, bir miktar şeker serpin. Hazırladığınız hamur bu kaplara doldurun.</p>"
+              "<p>Sufleyi önceden ısıtılmış 240 dereceli fırında 25 dakika pişirin.</p>"
+              "<p>Üstüne pudra şekeri serperek, servis yapın.</p>"),
     ],
     [
       FoodDetail(
@@ -588,6 +660,84 @@ class DataLoader {
               "<p>Püre haline gelen karışımı yayvan bir tepsiye döküp soğumaya bırakın.</p>"
               "<p>Favayı kare veya üçgen şekilde kesin.</p>"
               "<p>Üzerine limon ve zeytinyağı döküp dereotu ile süsleyerek servis yapın.</p>"),
+      FoodDetail(
+          "Havuç Tarator",
+          "havuctarator",
+          "<p><b>  Havuç Tarator Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>0.5 kg haşlanmış havuç</li>"
+              "<li>0.5 kg süzme yoğurt</li>"
+              "<li>0.5 demet maydanoz</li>"
+              "<li>3 diş dövülmüş sarımsak</li>"
+              "<li>200 gr kırık fındık</li>"
+              "<li>50 gr maydanoz</li>"
+              "<li>1 tatlı kaşığı tuz</li></ul>"
+              "<p><b>  Havuç Tarator Tarifi'nin Yapılışı:</b></p>"
+              "<p>Havuçları soyduktan sonra rendeleyin. </p>"
+              "<p>Rendelediğiniz havuçları bir tavada yağda 10 dakika kavurun.</p>"
+              "<p>Bir kaba alarak soğumaya bırkın. </p>"
+              "<p>Soğuyan havuca ufak ufak doğradığınız dereotunu, sarımsağı, tuzu, mayonezi, yoğurdu ve en son fındığı ekleyerek karıştırın.</p>"
+              "<p>Karışımı bir kaba alarak üzerini fındık ekleyerek servis edebilirsiniz.</p>"),
+      FoodDetail(
+          "Kısır",
+          "kisir",
+          "<p><b>  Kısır Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>2 su bardağı ince bulgur</li>"
+              "<li>1 demet taze soğan</li>"
+              "<li>1/2 demet maydanoz</li>"
+              "<li>1/2 demet dereotu</li>"
+              "<li>2 tatlı kaşığı kuru nane</li>"
+              "<li>2 çorba kaşığı domates salçası</li>"
+              "<li>2 çorba kaşığı biber salça</li>"
+              "<li>1 tatlı kaşığı tuz</li>"
+              "<li>1 çay kaşığı karabiber</li>"
+              "<li>1 çay kaşığı kırmızıbiber</li>"
+              "<li>1 çay kaşığı pulbiber</li>"
+              "<li>1/2 çay bardağı zeytinyağı</li>"
+              "<li>1 limonun suyu</li>"
+              "<li>Salata yaprakları</li></ul>"
+              "<p><b>  Kısır Tarifi'nin Yapılışı:</b></p>"
+              "<p>Bulguru ayıklayıp, 3 kere yıkayın. Bulguru bir tencereye koyun.</p>"
+              "<p>Üzerine bulgurun hizasından biraz az olacak şekilde sıcak su koyun.</p>"
+              "<p>Tencerenin kapağını kapatıp, bulgurun suyu çekmesi için bekletin.</p>"
+              "<p>Bulgur soğuduktan sonra ince kıyılmış taze soğan, maydanoz, dereotu, nane, domates, biber salçası, tuz, karabiber, kırmızıbiber, pulbiber, zeytinyağı ve limon suyunu ekleyip karıştırın.</p>"
+              "<p>Kısırı salata yaprakları içinde servis yapın.</p>"),
+      FoodDetail(
+          "Patates Püresi",
+          "patatespuresi",
+          "<p><b>  Patates Püresi Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>2 adet orta boy patates</li>"
+              "<li>1/3 su bardağı süt</li>"
+              "<li>1/2 yemek kaşığı tereyağı</li>"
+              "<li>2-3 yemek kaşığı rendelenmiş kaşar peyniri (isteğe bağlı)</li>"
+              "<li>1/2 çay kaşığı tuz</li></ul>"
+              "<p><b>  Patates Püresi Tarifi'nin Yapılışı:</b></p>"
+              "<p>Patateslerin kabuklarını soyup, iyice yıkayın.</p>"
+              "<p>Daha sonra iri parçalar halinde kesin.</p>"
+              "<p>Patatesleri küçük bir tencereye koyun. Üzerine sıcak su ve tuz ekleyin.</p>"
+              "<p>Yumuşayana kadar pişirin. Çatalı batırdığınızda giriyorsa haşlanmış demektir.</p>"
+              "<p>Haşlanan patateslerin suyunu süzün.</p>"
+              "<p>Hemen üzerine tereyağı ve dilerseniz lezzetini arttırmak için kaşar peyniri ekleyin.</p>"
+              "<p>Püre haline gelene kadar çatal ile iyice ezin. Ya da blender ile karıştırın.</p>"
+              "<p>Son olarak pürenin üzerine sütü dökün. İyice karıştırın.</p>"
+              "<p>Afiyet olsun!</p>"),
+      FoodDetail(
+          "Pembe Sultan",
+          "pembesultan",
+          "<p><b>  Pembe Sultan Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>1 adet küçük boy pancar</li>"
+              "<li>500 gr yoğurt</li>"
+              "<li>2 diş sarımsak</li>"
+              "<li>Tuz</li></ul>"
+              "<p><b>  Pembe Sultan Tarifi'nin Yapılışı:</b></p>"
+              "<p>Pancarı yumuşayana kadar haşlayın</p>"
+              "<p>Kabuğunu soyun.</p>"
+              "<p>Pancarın yarısını rendenin kalın tarafı, yarısını ise ince tarafıyla rendeleyin.</p>"
+              "<p>İçine yoğurt, ezilmiş sarımsak ve tuzu ekleyip karıştırın.</p>"
+              "<p>Servis tabağına alıp istediğiniz şekilde süsleyerek servis yapın.</p>"),
     ],
     [
       FoodDetail(
@@ -601,6 +751,22 @@ class DataLoader {
               "<p><b>Acılı Cevizli Sos Tarifi'nin Yapılışı:</b></p>"
               "<p>Salça ve cevizi karıştırın. Karışımı mayoneze ilave edin.</p>"
               "<p>Acılı cevizli sosu, sandviçlere sürebilir, haşlanmış etlerin yanında servis yapabilirsiniz.</p>"),
+      FoodDetail(
+          "Biber Turşusu",
+          "bibertursusu",
+          "<p><b>  Biber Turşusu Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>Biber</li>"
+              "<li>Tuz</li>"
+              "<li>Sarımsak</li></ul>"
+              "<p><b>  Biber Turşusu Tarifi'nin Yapılışı:</b></p>"
+              "<p>Turşu için ince, uzun şekilli. acı veya tatlı biberler kullanılır.</p>"
+              "<p>Turşu olduktan sonra istenilen sarı rengi elde edebilmek için, taze halde iken rengi koyu yeşil olmayan, en iyisi yeşil-sarı renkte olan biberleri seçin.</p>"
+              "<p>Ezik ve çürük olanları ayıklayın. Turşunun hazırlanması ve katkı maddeleri, hıyar turşusunda olduğu gibidir.</p>"
+              "<p>Yalnız salamuranın tuz miktarı biraz daha az olmalıdır.</p>"
+              "<p>Tartıyla yapılacaksa. sonuçta tuz oranı %4 olacak şekilde hesaplanmalı; önceden hazır salamura kullanılacaksa, salamuranın tuz oranı %7-8 olmalıdır.</p>"
+              "<p>Biber turşusunun yenilecek olgunluğa geldiği, tad ve kokudaki değişme ve yeşil rengin tam sarıya dönmesi ile anlaşılır.</p>"
+              "<p>Biber turşusu. sade olarak hazırlanıp yenilebildiği gibi, hıyar ve domatesle birlikte, karışık olarak da kurulabilir.</p>"),
     ]
   ];
 }
