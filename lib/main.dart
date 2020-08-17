@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:yemek_tarif/models/detailParams.dart';
-import 'package:yemek_tarif/yemek_detay.dart';
-import 'package:yemek_tarif/yemek_icindekiler.dart';
-import 'package:yemek_tarif/yemek_liste.dart';
+import 'package:yemek_tarif/food_detail.dart';
+import 'package:yemek_tarif/food_contents.dart';
+import 'package:yemek_tarif/food_list.dart';
 
 void main() => runApp(MyApp());
 

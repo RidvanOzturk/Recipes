@@ -30,11 +30,21 @@ class DataLoader {
       Food("Domates Çorbası", "domatescorbasi"),
       Food("Ezogelin Çorbası", "ezogelincorbasi"),
       Food("Mercimek Çorbası", "mercimekcorbasi"),
+      Food("İşkembe Çorbası", "iskembecorbasi"),
+      Food("Kremalı Tavuk Çorbası", "kremalitavukcorba")
     ],
-    [Food("Fırında Makarna", "firindamakarna")],
+    [
+      Food("Fırında Makarna", "firindamakarna"),
+      Food("Çiçek Böreği", "cicekboregi"),
+      Food("Evişi Lahmacun", "lahmacun"),
+      Food("Kıymalı Burma Börek", "kiymaliburmaborek"),
+      Food("Lazanya", "lazanya"),
+    ],
     [
       Food("Ankara Sarması", "ankarasarmasi"),
-      Food("Burma Kadayıf", "burmakadayif")
+      Food("Burma Kadayıf", "burmakadayif"),
+      Food("İrmik Helvası", "irmikhelvasi"),
+      Food("Kabak Tatlısı", "kabaktatlisi")
     ],
     [Food("Fava", "fava")],
     [Food("Acılı Cevizli Sos", "acilicevizlisos")]
@@ -279,6 +289,65 @@ class DataLoader {
               "<p>1 su bardağı suyu ilave edin. Süzülen mercimeği ve tuzu ekleyin.</p>"
               "<p>Küçük bir tavada kalan tereyağını eritin. Kırmızıbiberi yakın.</p>"
               "<p>Çorbanın üzerine gezdirin. Limon sıkıp servis yapın.</p>"),
+      FoodDetail(
+          "İşkembe Çorbası",
+          "iskembecorbasi",
+          "<p><b>  İşkembe Çorbası Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>1 Kg İşkembe (temizlenmiş)</li>"
+              "<li>2 Çorba Kaşığı Un</li>"
+              "<li>2 Yumurta Sarısı</li>"
+              "<li>1 Limon Suyu</li>"
+              "<li>1 Fincan Sirke</li>"
+              "<li>3-5 Diş Sarımsak</li>"
+              "<li>Tuz, Kırmızı Biber</li>"
+              "<li>2 Çorba Kaşığı Tereyağı</li>"
+              "<li>4 Diş Sarmısak (haşlarken kullanmak için)</li></ul>"
+              "<p><b>  İşkembe Çorbası Tarifi'nin Yapılışı:</b></p>"
+              "<p>Temizlenmiş işkembeyi bol suda birkaç su yıkayalım.</p>"
+              "<p>Tencereye alıp üzerine üç parmak çıkacak kadar su ilave edelim. </p>"
+              "<p>Yarım limonun suyunu ve doğranmış sarımsakları ekleyerek işkembeyi yumuşayana kadar haşlayalım (limon ve sarmısağı tadının ve renginin daha iyi olması için kullanıyoruz).</p>"
+              "<p>Haşlanan işkembe delikli kepçe ile çırararak, kesme şeker iriliğinde doğrayalım.</p>"
+              "<p>İşkembenin suyunu tel süzgeçten geçirip, bir başka tencereye alarak kaynamaya bırakalım.</p>"
+              "<p>Bu arada terbiyeyi hazırlayalım. İki kaşık una bir limon suyu, iki yumurta sarısını ve 1-2 fincan su ilave ederek pürüzsüz ve topaksız kıvama gelene dek çırpalım.</p>"
+              "<p>Kaynamakta olan işkembe suyuna azar azar ve sürekli karıştırarak dökelim.</p>"
+              "<p>Doğranan işkembeleri de ekleyerek tuzunu ayarlayıp 5 dakika kaynatalım. </p>"
+              "<p>Sarımsağı döverek ilave edelim.</p>"
+              "<p>Çorbayı kaselere aldıktan sonra üzerine kırmızı biberli tereyağı gezdirerek servis yapalım (arzuya göre sirke ilave edelim)</p>"),
+      FoodDetail(
+          "Kremalı Tavuk Çorbası",
+          "kremalitavukcorba",
+          "<p><b>  Kremalı Tavuk Çorbası Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>0.75 lt Tavuk Suyu</li>"
+              "<li>200 gr Tavuk Göğsü</li>"
+              "<li>1 Soğan</li>"
+              "<li>3 Çorba Kaşığı Tereyağı</li>"
+              "<li>2 Çorba Kaşığı Un</li>"
+              "<li>200 gr Süt Kreması</li>"
+              "<li>Tuz, Karabiber</li>"
+              "<li>Rendelenmiş Limon Kabuğu</li>"
+              "<li>3 Çorba Kaşığı Limon Suyu</li>"
+              "<li>12 Karides (dondurulmuş)</li>"
+              "<li>8 Kiraz Domates</li>"
+              "<li>2 Çorba Kaşığı Sıvıyağ</li>"
+              "<li>1 Demet Maydanoz</li>"
+              "<li>Birkaç Nane Yaprağı</li>"
+              "<li>1 Kahve Fincan Süt</li>"
+              "<li>8 Çöp Şiş</li></ul>"
+              "<p><b>  Kremalı Tavuk Çorbası Tarifi'nin Yapılışı:</b></p>"
+              "<p>Evde hazır tavuk suyunuz, yoksa bunun yerine et suyu tabletleri de kullanabilirsiniz. </p>"
+              "<p>Tabletleri paketin üzerindeki tarife göre 0.750 lt tavuk suyu elde edebilecek biçimde hazırlayın. </p>"
+              "<p>Soğanı soyup küçük küpler halinde doğrayın. </p>"
+              "<p>Bir tencerede tereyağını eritip soğanı kavurun. Unu ilave edip kavurmaya devam edin. </p>"
+              "<p>Tavuk suyunu ekleyin ve kaynatın.</p>"
+              "<p>Süt kremasını ilave edip çorbayı 1 çorba kaşığı limon suyu, limon kabuğu, tuz ve karabiberle tatlandırın.</p>"
+              "<p>Tavuk etini küçük küpler halinde doğrayın. Karidesler ayıklanmış ise sırt kısımlarını kesip içlerini temizleyin. </p>"
+              "<p>Ardından yıkayıp suyunun süzülmesini bekleyin. Çöp şişlere değişmeli olarak tavuk eti, domates ve karidesleri dizin. </p>"
+              "<p>Üzerinde limon suyu gezdirip tuz ve karabiberle tatlandırın. Sıvıyağı bir tavada kızdırıp çöp şişleri 1-2 dakika kadar pişirin.</p>"
+              "<p>Maydanoz ve naneyi yıkayıp ayıklayın. Süsleme için birkaç yaprak ayırın. Kalanı sütle birlikte püre haline getirin.</p>"
+              "<p>Karışımı çorbaya ilave edip 2-3 dakika daha pişirip servis tabakarına alın.</p>"
+              "<p>Çöp şişleri tabakların üzerine yerleştirip taze baharatlarla süsleyin.</p>"),
     ],
     [
       FoodDetail(
@@ -301,6 +370,116 @@ class DataLoader {
               "<p>Yumurtaya yarım litre sütü, tuzu, karabiberi koyup, tepsideki makarnaların üzerine gezdirerek dökünüz.</p>"
               "<p>En üstüne erimiş 1 kaşık yağı gezdirerek dökünüz.</p>"
               "<p>Sonra çıkartıp, hafif soğuyunca kare veya baklava şeklinde kesip servis yapınız.(isteğe bağlı)</p>"),
+      FoodDetail(
+          "Çiçek Böreği",
+          "cicekboregi",
+          "<p><b>  Çiçek Böreği Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>3 Adet Yufka</li>"
+              "<li>2 Adet Yumurta Akı</li>"
+              "<li>150 gr Beyaz Peynir</li>"
+              "<li>1/2 Demet Maydanoz</li>"
+              "<li>Sıvı Yağ</li></ul>"
+              "<p><b>  Çiçek Böreği Tarifi'nin Yapılışı:</b></p>"
+              "<p>Yufkaları düz ve temiz bir zemine üst üste dizelim.</p>"
+              "<p>Bir su bardağı ile keserek yuvarlaklar çıkaralım.</p>"
+              "<p>Küçük bir kapta yumurtaların aklarını beyaz peyniri, ince kıyılmış yarım demet maydanozu karıştıralım.</p>"
+              "<p>5 adet yuvarlak yufka parçasını alalım. </p>"
+              "<p>Her yuvarlağın orta yerine peynirli harçtan bir miktar koyalım ve üst üste dizelim.</p>"
+              "<p>En Üstteki yuvarlağın üzerini boş bırakalım.</p>"
+              "<p>Yuvarlak parçaların orta yerine parmağımız ile bastıralım.</p>"
+              "<p>Çiçek şeklini alan parçaların bütünlüğünü bozmadan bol, kızgın yağda kızartalım.</p>"
+              "<p>Fazla yağını süzmek için kağıt mutfak havlusunun üzerine çıkaralım.</p>"
+              "<p>Sıcak olarak servis yapalım.</p>"),
+      FoodDetail(
+          "Evişi Lahmacun",
+          "lahmacun",
+          "<p><b>  Evişi Lahmacun Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>2 Su Bardağı Un</li>"
+              "<li>2 Çay Kaşığı Tuz</li>"
+              "<li>3 gr Kuru Maya</li>"
+              "<li>1/2 Tatlı Kaşığı Toz Şeker</li>"
+              "<li>1/4 Su Bardağı Ilık Su</li>"
+              "<li>150 gr Yoğurt</li>"
+              "<li>450 gr Domates</li>"
+              "<li>1 Orta Boy Soğan</li>"
+              "<li>250 gr Kıyma</li>"
+              "<li>1 Demet Maydanoz</li>"
+              "<li>5 Diş sarmısak</li>"
+              "<li>5 Adet Sivribiber</li>"
+              "<li>Karabiber, Tuz</li></ul>"
+              "<p><b>  Evişi Lahmacun Tarifi'nin Yapılışı:</b></p>"
+              "<p>Ön hazırlık olarak, soğan, maydanoz, ve sivribiberi ince kıyın.</p>"
+              "<p>Sarmısağı dövün. Maya ve toz şekeri ılık suyla ezin.</p>"
+              "<p>Limonu 8'e bölün.</p>"
+              "<p>Kabuklarını soyduğunuz domatesleri de minik küpler halinde doğrayın.</p>"
+              "<p>Unu eleyin. 2 yemek kaşığını ayırıp kalanını 2 çay kaşığı tuzu katıp karıştırın.</p>"
+              "<p>Unun ortasını havuz biçiminde açın. Mayalı şekerli suyu ve yoğurdu koyup iyice karıştırın.</p>"
+              "<p>Elde ettiğiniz yumuşak hamuru ele yapışmaz kıvama gelene kadar yoğurun.</p>"
+              "<p>Üzerine nemli bir bez örterek 30 dakika kadar ılık bir ortamda mayalanmaya bırakın. </p>"
+              "<p>Hamuru iri yumurta büyüklüğünde pazılara (hamur parçaları) ayırın.</p>"
+              "<p>Her pazıyı unlayarak elinizle yarım santim kalınlıkta yuvarlak olarak açın.</p>"
+              "<p>Bu arada harcı hazırlayın.</p>"
+              "<p>Bunun için, bir kapta domatesi, soğanı, kıymayı, maydanozu, sivribiberi, sarmısağı, tuz ve karabiberi iyice karıştırın.</p>"
+              "<p>Hazırladığınız harcı, açtığınız hamurların üzerine yayın. </p>"
+              "<p>Ancak hamurların kenarında 1 cm kadar boşluk kalmalı. Unladığınız fırın tepsisine lahmacunları dizin.</p>"
+              "<p>Önceden 220 derecede ısıttığınız fırına koyduğunuz lahmacunları 15 dakika sonra çıkarabilirsiniz.</p>"),
+      FoodDetail(
+          "Kıymalı Burma Börek",
+          "kiymaliburmaborek",
+          "<p><b>  Kıymalı Burma Börek Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>5 yaprak yufka</li>"
+              "<li>Yarım paket margarin veya tereyağı</li>"
+              "<li>300 gr orta yağlı kıyma</li>"
+              "<li>2 yemek kaşığı çam fıstığı</li>"
+              "<li>1 adet orta boy soğan</li>"
+              "<li>Yeteri kadar tuz, karabiber, tatlı toz biber</li>"
+              "<li>Üzeri için:</li>"
+              "<li>2 yemek kaşığı katı yoğurt</li>"
+              "<li>1 yumurta sarısı</li>"
+              "<li>2 yemek kaşığı sıvı yağ</li></ul>"
+              "<p><b>  Kıymalı Burma Börek Tarifi'nin Yapılışı:</b></p>"
+              "<p>Yarım margarinin yarısını kıyma, sogan, çam fıstığı ile kavurun.</p>"
+              "<p>Yarım paket margarinin yarısını da eritip yoğurt ile karıştırın.</p>"
+              "<p>Yufkanın ortasına sürün. </p>"
+              "<p>Her bir yufkayı ortadan ikiye kesin.</p>"
+              "<p>Tam ortasına kıyma harcını doldurun.</p>"
+              "<p>Yağlı yoğurttan fırça ile sürün. Oklavayı geniş kısımdan sararak dolayın.</p>"
+              "<p>Elinizle büzerek çıkarın. </p>"
+              "<p>Fırın kabına döndürerek döşeyin. </p>"
+              "<p>Üzerine yumurta sarısı sürün. </p>"
+              "<p>Sıvı yağı gezdirip fırına verin.</p>"),
+      FoodDetail(
+          "Lazanya",
+          "lazanya",
+          "<p><b>  Lazanya Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>200 gr. kıyma</li>"
+              "<li>1 paket lazanya</li>"
+              "<li>3 adet kuru soğan</li>"
+              "<li>3 adet havuç</li>"
+              "<li>3 su bardağı kıyılmış mantar</li>"
+              "<li>1 yemek kaşığı domates salçası</li>"
+              "<li>2 yemek kaşığı tereyağı</li>"
+              "<li>2 yemek kaşığı zeytinyağı</li>"
+              "<li>1 çay kaşığı karabiber</li>"
+              "<li>1 tatlı kaşığı tuz</li>"
+              "<p><b>  Lazanya Tarifi'nin Yapılışı:</b></p>"
+              "<p>Kaynayan tuzlu suya 2 yemek kaşığı zeytinyağ koyun. Lazanyayı 4'er, 4'er içine atın.</p>"
+              "<p>Lazanya yumuşayıp rengi beyazlaşınca soğuk suya tutun, sonra da süzün.</p>"
+              "<p>Margarini eritin, zar şeklinde doğradığınız soğan, kıyma, havuç, mantar, karabiber, tuz, salça ve 1 bardak su koyun. </p>"
+              "<p>Hazırladığınız bu harcı 15 dakika pişirin.</p>"
+              "<p>Yağlanmış fırın kabına lazanyaları yan yana dizin. Üstüne beşamel sosu dökün. </p>"
+              "<p>İkinci sıraya kıymalı harcı yayın, üçüncü sıraya beşamel sosu dökün.</p>"
+              "<p> Dördüncü sıraya tekrar kıymalı harcı, beşinci sıraya yeni beşamel sosu koyun.</p>"
+              "<p>Altıncı sıraya harcı, yedinci sıraya da kalan sosu dökün. </p>"
+              "<p>175 derecelik fırında 25 dakika pişirin. 10 dakika bekletip servis yapın.</p>"
+              "<p><strong>  SOSUN TARİFİ</strong></p>"
+              "<p>Unu, pembeleşene kadar tereyağında kavurun.</p>"
+              "<p>Süt ve tuz koyup karıştırarak muhallebi kıvamında pişirin. </p>"
+              "<p>Kaşar peynirini de ekledikten sonra tencereyi ocaktan indirin.</p>")
     ],
     [
       FoodDetail(
@@ -357,6 +536,33 @@ class DataLoader {
               "<p>Burma kadayıfı önceden ısıtılmış 180 dereceye ayarlanmış fırında 15 dak. pişirin.</p>"
               "<p>Aynı tepside ters yüz ederek 10 dak. da diğer yüzünü pişirin. </p>"
               "<p>Sıcak şerbeti üzerine dökün ve şerbetini çektikten sonra servis edin.</p>"),
+      FoodDetail(
+          "İrmik Helvası",
+          "irmikhelvasi",
+          "<p><b>  İrmik Helvası Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>3 su bardağı kalın irmik</li>"
+              "<li>1 bardak tereyağı</li>"
+              "<li>Yarım paket vanilya</li>"
+              "<li>1 fincan çam fıstığı ya da iç badem</li>"
+              "<li>3 su bardağı toz şeker</li>"
+              "<li>4 su bardağı kaynar su ya da süt</li></ul>"
+              "<p><b>  İrmik Helvası Tarifi'nin Yapılışı:</b></p>"
+              "<p>Tencerede yağı eritip, irmik ve fıstığı içine katın. Tahta kaşıkla devamlı karıştırarak orta hararetli ateşte 35-40 dakika kadar kavurun.</p>"
+              "<p>Üzerine kaynar su ya da süt döküp, bir iki kere karıştırın, sonra vanilya ve şekeri de ilave edin, tencerenin ağzını kapatıp, çok hafif ateşte biraz pişirin.</p>"
+              "<p>Sonra ateşi söndürüp demlenmeye bırakın, servis yaparken üzerini fıstık veya bademle süsleyip tarçın serpin.</p>"),
+              FoodDetail("Kabak Tatlısı", "kabaktatlisi", "<p><b>  Kabak Tatlısı Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+"<li>1/2 adet Bal kabağı</li>"
+"<li>2 1/2 su bardağı Şeker</li>"
+"<li>1 su bardağı Ceviz içi</li></ul>"
+"<p><b>  Kabak Tatlısı Tarifi'nin Yapılışı:</b></p>"
+"<p>1. Kabak soyulur, yıkanır, dilimlenir.</p>"
+"<p>2. Yayvan bir tencereye, bir sıra kabak üzerine şeker, bir sıra kabak yine üzerine şeker şeklinde dizilir.</p>"
+"<p>Kapağı kapatılır, 3-4 saat şeker eriyinceye kadar bekletilir. </p>"
+"<p>3. Ateşe konur, kapağı kapalı olarak yumuşayıncaya ve suyunu çekinceye kadar hafif ateşte pişirilir.</p>"
+"<p>4. Soğuduktan sonra, servis tabağına alınır, üzerine çekilmiş ceviz konur.</p>"
+),
     ],
     [
       FoodDetail(

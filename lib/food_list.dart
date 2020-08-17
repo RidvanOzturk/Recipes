@@ -31,7 +31,7 @@ class YemekListesi extends StatelessWidget {
   }
 
   Widget tekSatirYemek(BuildContext context, int index) {
-    Food oAnListeyeEklenenYemekTuru = tumYemekler[index];
+    Food listeyeEklenenYemekTuru = tumYemekler[index];
     return Card(
       color: Colors.grey.shade100,
       elevation: 5,
@@ -40,12 +40,12 @@ class YemekListesi extends StatelessWidget {
         child: ListTile(
           onTap: () => Navigator.pushNamed(context, "/yemekIcindekiler/$index"),
           leading: Image.asset(
-            oAnListeyeEklenenYemekTuru.image,
+            listeyeEklenenYemekTuru.image,
             width: 64,
             height: 64,
           ),
           title: Text(
-            oAnListeyeEklenenYemekTuru.name,
+            listeyeEklenenYemekTuru.name,
             style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.w600,
@@ -55,7 +55,7 @@ class YemekListesi extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
               "Herkes için yemek farkıyla " +
-                  oAnListeyeEklenenYemekTuru.name +
+                  listeyeEklenenYemekTuru.name +
                   "...",
               style: TextStyle(
                   fontSize: 16,
