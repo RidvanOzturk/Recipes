@@ -37,8 +37,10 @@ class YemekDetay extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: SingleChildScrollView(
+                child: Container(
+              padding: EdgeInsets.all(5),
               child: Html(data: secilenYemekTuru.recipe),
-            ),
+            )),
           ),
         ],
       ),

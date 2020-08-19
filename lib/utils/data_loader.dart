@@ -24,6 +24,8 @@ class DataLoader {
       Food("Erişte", "eriste"),
       Food("Zeytinyağlı Yaprak Sarma", "zeytinyagliyapraksarma"),
       Food("Çay Lokması", "caylokmasi"),
+      Food("Tavuk Sote", "tavuksote"),
+      Food("Biftek Rulosu", "biftekrulosu")
     ],
     [
       Food("Bezelye Çorbası", "bezelyecorbasi"),
@@ -31,7 +33,8 @@ class DataLoader {
       Food("Ezogelin Çorbası", "ezogelincorbasi"),
       Food("Mercimek Çorbası", "mercimekcorbasi"),
       Food("İşkembe Çorbası", "iskembecorbasi"),
-      Food("Kremalı Tavuk Çorbası", "kremalitavukcorba")
+      Food("Kremalı Tavuk Çorbası", "kremalitavukcorba"),
+      Food("Şehriye Çorbası", "sehriyecorbasi")
     ],
     [
       Food("Fırında Makarna", "firindamakarna"),
@@ -39,6 +42,7 @@ class DataLoader {
       Food("Evişi Lahmacun", "lahmacun"),
       Food("Kıymalı Burma Börek", "kiymaliburmaborek"),
       Food("Lazanya", "lazanya"),
+      Food("Bulgur Pilavı", "bulgurpilavi"),
     ],
     [
       Food("Ankara Sarması", "ankarasarmasi"),
@@ -57,7 +61,10 @@ class DataLoader {
     ],
     [
       Food("Acılı Cevizli Sos", "acilicevizlisos"),
-      Food("Biber Turşusu", "bibertursusu")
+      Food("Biber Turşusu", "bibertursusu"),
+      Food("Ayva Reçeli", "ayvareceli"),
+      Food("Vinegrete Sos", "vinegretesos"),
+      Food("Kırmızı Biber Turşusu", "kirmizibibertursusu")
     ]
   ];
 
@@ -212,6 +219,61 @@ class DataLoader {
               "<p> Karbonat ve tuzunu da ilave edip iyice yoğurun.</p>"
               "<p> Hamuru merdane yardımıyla 1 cm kalınlığında açıp, iki parmak eninde istediğiniz boyda şeritler kesin.</p>"
               "<p> Kızdırılmış sıvıyağlı tavada, şeritler halindeki hamurları, kabarıp pembeleşinceye kadar kızartın.</p>"),
+      FoodDetail(
+          "Tavuk Sote",
+          "tavuksote",
+          "<p><b>  Tavuk Sote Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>275 gr kemiksiz tavuk eti (ufak parçalara bölünmüş)</li>"
+              "<li>2 yemek kaşığı soya sosu</li>"
+              "<li>1 yemek kaşığı su</li>"
+              "<li>1/4 çay kaşığı zencefil</li>"
+              "<li>2 çay kaşığı mısır unu.</li>"
+              "<li>2 yemek kaşığı ayçiçek yağı</li>"
+              "<li>3 taze soğan, doğranmış</li>"
+              "<li>1 küçük yeşil biber (küp halinde kesilmiş)</li>"
+              "<li>100 gr mantar (doğranmış)</li>"
+              "<li>1/2 küçük veya 1/4 büyük karnabahar(küçük çiçeklere ayrılmış)</li>"
+              "<li>4 yemek kaşığı su veya tavuk suyu, kaynar halde</li>"
+              "<li>2 domates (dilimlenmiş)</li></ul>"
+              "<p><b>  Tavuk Sote Tarifi'nin Yapılışı:</b></p>"
+              "<p>Bir kasede soya sosunu, suyu zencefili ve mısır ununu karıştırın.</p>"
+              "<p>Tavuk parçalarını içine batırıp bu sosla iyice kaplanmalarını sağlayın.</p>"
+              "<p>Bir tavada 1 yemek kaşığı yağı orta ateşte iyice kızdırın. </p>"
+              "<p>Tavukları kızgın yağda sık sık karıştırarak bir dakika sote edin.</p>"
+              "<p>Bir tabağa aktarıp fırında sıcak tutun.</p>"
+              "<p>Kalan yağı orta ateşte tekrar kızdırın.</p>"
+              "<p>Taze soğanı, yeşil biberi mantarları ve karnabaharı ekleyip l dakika, yine sık sık karıştırarak sote edin. </p>"
+              "<p>Suyu veya tavuk suyunu sıcak olarak ekleyip 2-3 dak. pişirin.</p>"
+              "<p>Tavukları tekrar tavaya koyun. Tuz katıp, domatesleri ekleyin ve l dakika orta ateşte ısıtıp servis yapın.</p>"
+              "<p>Püf noktası: Bu tür kızartmanın amacı, sebe ve etleri diri bırakmaktır. </p>"
+              "<p>Bu yüzden pişirme işlemi az miktarda çok kızgın yağda yapılmalıdır.</p>"),
+      FoodDetail(
+          "Biftek Rulosu",
+          "biftekrulosu",
+          "<p><b>  Biftek Rulosu Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>1 Adet Soğan</li>"
+              "<li>1 Adet Havuç</li>"
+              "<li>1 Çay Kaşığı Karabiber</li>"
+              "<li>1 Çay Kaşığı Kimyon</li>"
+              "<li>Tuz</li>"
+              "<li>250 gr. Kıyma</li>"
+              "<li>6 Adet Biftek</li>"
+              "<li>1 Çay Kaşığı Bezelye</li>"
+              "<li>1 Çorba Kaşığı Salça</li>"
+              "<li>1 Su Bardağı Su</li>"
+              "<li>1 Çorba Kaşığı Margarin</li></ul>"
+              "<p><b>  Biftek Rulosu Tarifi'nin Yapılışı:</b></p>"
+              "<p>1 adet soğanı ve havucu rendeleyin.</p>"
+              "<p>1 çay kaşığı karabiber, kimyon, tuz ve kıymayı derin bir kabın içinde yoğurun.</p>"
+              "<p>1 çay bardağı bezelyeyi ekleyin.</p>"
+              "<p>6 adet bifteğin içine, hazırladığınız harcı doldurun.</p>"
+              "<p>Biftekleri rulo biçiminde sarın. Bifteğin kenarlarını kürdanla tutturun.</p>"
+              "<p>İçlerini doldurduğunuz biftekleri, margarinle hafifçe yağladığınız tepsiye dizin.</p>"
+              "<p>1 çorba kaşığı salçayı, 1 su bardağı suya karıştırın. Bifteklerin üzerine dökün. </p>"
+              "<p>Önceden ısıtılmış 180 derecelşk fırında 20-25 dakika pişirin. </p>"
+              "<p>Fırından çıkardıktan sonra kürdanları bifteklerden çıkarıp servis yapın.</p>")
     ],
     [
       FoodDetail(
@@ -359,6 +421,24 @@ class DataLoader {
               "<p>Maydanoz ve naneyi yıkayıp ayıklayın. Süsleme için birkaç yaprak ayırın. Kalanı sütle birlikte püre haline getirin.</p>"
               "<p>Karışımı çorbaya ilave edip 2-3 dakika daha pişirip servis tabakarına alın.</p>"
               "<p>Çöp şişleri tabakların üzerine yerleştirip taze baharatlarla süsleyin.</p>"),
+      FoodDetail(
+          "Şehriye Çorbası",
+          "sehriyecorbasi",
+          "<p><b>  Şehriye Çorbası Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>125 gr tereyağı</li>"
+              "<li>1 su bardağı domates püresi</li>"
+              "<li>1 su bardağı tel şehriye</li>"
+              "<li>1 tatlı kaşığı biber salçası</li>"
+              "<li>6 su bardağı su</li></ul>"
+              "<p><b>  Şehriye Çorbası Tarifi'nin Yapılışı:</b></p>"
+              "<p>Tereyağını tencerede eritin. Domates püresini ve biber salçasını ekleyip karıştırın.</p>"
+              "<p>6 su bardağı suyu ilave edin. Kaynamasını bekleyin.(Dilerseniz, tavuk veya et suyu da kullanabilirsiniz.)</p>"
+              "<p>Çorba kaynamaya başlayınca şehriyeleri ekleyin.</p>"
+              "<p>Bir yandan karıştırmayı sürdürün.</p>"
+              "<p>Yoksa şehriyeler birbirine yapışır. Şehriyeler pişmeye başladığında tuz ekleyin.</p>"
+              "<p>Kısa bir süre daha pişirin. Tel şehriye çorbanız hazır.</p>"
+              "<p>Dilerseniz maydanoz ve limonla servis yapabilirsiniz. Afiyet olsun!</p>"),
     ],
     [
       FoodDetail(
@@ -490,7 +570,25 @@ class DataLoader {
               "<p><strong>  SOSUN TARİFİ</strong></p>"
               "<p>Unu, pembeleşene kadar tereyağında kavurun.</p>"
               "<p>Süt ve tuz koyup karıştırarak muhallebi kıvamında pişirin. </p>"
-              "<p>Kaşar peynirini de ekledikten sonra tencereyi ocaktan indirin.</p>")
+              "<p>Kaşar peynirini de ekledikten sonra tencereyi ocaktan indirin.</p>"),
+      FoodDetail(
+          "Bulgur Pilavı",
+          "bulgurpilavi",
+          "<p><b>  Bulgur Pilavı Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>700 gr pilavlık bulgur</li>"
+              "<li>250 gr tereyağı</li>"
+              "<li>6 su bardağı (1.5 litre) et suyu</li>"
+              "<li>Tuz</li></ul>"
+              "<p><b>  Bulgur Pilavı Tarifi'nin Yapılışı:</b></p>"
+              "<p>Bulguru yıkayıp süzün. Tereyağını tencerede eritip bulguru ilave ederek 3-4 dakika kavurun. </p>"
+              "<p>Sıcak et suyu ve tuz ekleyip bir taşım kaynatın. </p>"
+              "<p>Orta ateşte, bulgur suyunu çekmeye başlayıp göz göz oluncaya kadar pişirin.</p>"
+              "<p>Ateşi kısıp tencerenin kapağını kapatın ve 10-15 dakika daha pişirin. </p>"
+              "<p>Pilavı ateşten alın. Kapağını açıp tencereninüzerini kağıt havlu ile kaplayın ve kapağını tekrar kapatın.</p>"
+              "<p>Pilavı bu şekilde 20 dakika dinlendirin.</p>"
+              "<p>Tahta spatula veya kevgirle, bulguru fazla ezmemeye özen göstererek bir kez karıştırın.</p>"
+              "<p>Sıcak olarak servis yapın.</p>"),
     ],
     [
       FoodDetail(
@@ -767,6 +865,50 @@ class DataLoader {
               "<p>Tartıyla yapılacaksa. sonuçta tuz oranı %4 olacak şekilde hesaplanmalı; önceden hazır salamura kullanılacaksa, salamuranın tuz oranı %7-8 olmalıdır.</p>"
               "<p>Biber turşusunun yenilecek olgunluğa geldiği, tad ve kokudaki değişme ve yeşil rengin tam sarıya dönmesi ile anlaşılır.</p>"
               "<p>Biber turşusu. sade olarak hazırlanıp yenilebildiği gibi, hıyar ve domatesle birlikte, karışık olarak da kurulabilir.</p>"),
+      FoodDetail(
+          "Ayva Reçeli",
+          "ayvareceli",
+          "<p><b>  Ayva Reçeli Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>1.5 kilo ayva</li>"
+              "<li>5 su bardağı su</li>"
+              "<li>1.5 kilo toz şeker</li>"
+              "<li>2 çorba kaşığı limon suyu</li></ul>"),
+      FoodDetail(
+          "Vinegrete Sos",
+          "vinegretesos",
+          "<p><b>  Vinegrete Sos Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>1 çay k. tuz</li>"
+              "<li>1/3 çay k. beyazbiber</li>"
+              "<li>1/3 su bardağı sirke</li>"
+              "<li>1 su bardağı zeytinyağı</li></ul>"
+              "<p><b>  Vinegrete Sos Tarifi'nin Yapılışı:</b></p>"
+              "<p>Tuz ve beyazbiberi bir kaba koyun. Sirkeyi ilave edip bir telle çırparak iyice karıştırın.</p>"
+              "<p>Yağı, telle çırpmaya devanı ederek akıtıp sirkelil karışıma yedirin.</p>"
+              "<p>Kullanmadan önce bekletecek olursanız, yağ ve sirke zamanla ayrışacağı için, tekrar iyice karıştırın.</p>"),
+      FoodDetail(
+          "Kırmızı Biber Turşusu",
+          "kirmizibibertursusu",
+          "<p><b>  Kırmızı Biber Turşusu Tarifi'nin Malzemeleri:</b></p>"
+              "<ul>"
+              "<li>2 Kg Kırmızı Biber</li>"
+              "<li>2 Baş Sarmısak</li>"
+              "<li>2 Demet Maydanoz</li>"
+              "<li>1 Su Bardağı Sirke</li>"
+              "<li>1 Çay Bardağı Limon Suyu</li>"
+              "<li>1 Çay Bardağı Sıvı Yağ</li>"
+              "<li>Yeterince Turşu Tuzu</li></ul>"
+              "<p><b>  Kırmızı Biber Turşusu Tarifi'nin Yapılışı:</b></p>"
+              "<p>Kırmızı biberleri bol suda yıkayarak kurulayalım. Fırın tepsisine dizelim. </p>"
+              "<p>Fırında kabukları soyulup, yumuşayana dek fırında tutalım.</p>"
+              "<p>Biberleri boyuna iki eşit parçaya bölüp, çekirdek yataklarını çıkaralım. </p>"
+              "<p>Biberleri iri iri keselim. Sarmısakların kabuklarını soyalım.</p>"
+              "<p>Küçük küçük doğrayalım. Maydanozları ince ince keselim.</p>"
+              "<p>Hepsini harmanlayarak kavanoza dolduralım. Ayrı bir tabağa sirkeyi, limon suyunu ve turşu tuzunu karıştıralım.</p>"
+              "<p>Tuz eriyene kadar bir kaşık yardımıyle karıştıralım.</p>"
+              "<p>Sıvı yağı da ilave ederek kavanozun içine dökelim. Kavanozun ağzını kapatalım.</p>"
+              "<p>Not: Turşuyu kışa kadar saklayacaksanız, buzdolabında muhafaza edin.</p>")
     ]
   ];
 }
