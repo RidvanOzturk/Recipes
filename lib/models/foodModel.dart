@@ -1,8 +1,8 @@
-class Food {
+class FoodModel {
   String _name;
   String _image;
 
-  Food(this._name, this._image);
+  FoodModel(this._name, this._image);
 
   // ignore: unnecessary_getters_setters
   String get name => _name;

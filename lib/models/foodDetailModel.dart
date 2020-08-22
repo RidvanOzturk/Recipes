@@ -1,9 +1,9 @@
-class FoodDetail {
+class FoodDetailModel {
   String _title;
   String _image;
   String _recipe;
 
-  FoodDetail(this._title, this._image, this._recipe);
+  FoodDetailModel(this._title, this._image, this._recipe);
 
   // ignore: unnecessary_getters_setters
   String get title => _title;

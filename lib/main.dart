@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yemek_tarif/models/detailParams.dart';
-import 'package:yemek_tarif/food_detail.dart';
-import 'package:yemek_tarif/food_contents.dart';
-import 'package:yemek_tarif/food_list.dart';
+import 'package:yemek_tarif/models/detailParamsModel.dart';
+import 'package:yemek_tarif/detailPage.dart';
+import 'package:yemek_tarif/contentPage.dart';
+import 'package:yemek_tarif/categoryPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,26 +10,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Yemek Tarifleri",
       debugShowCheckedModeBanner: false,
-      initialRoute: "/yemekListesi",
+      initialRoute: "/",
       routes: {
-        "/": (context) => YemekListesi(),
-        "/yemekListesi": (context) => YemekListesi(),
+        "/": (context) => CategoryPage(),
       },
       onGenerateRoute: (RouteSettings settings) {
-        List<String> pathElemanlari = settings.name.split("/");
-        
-        if (pathElemanlari[1] == 'yemekIcindekiler' && pathElemanlari[2] != 'yemekDetay') {
+        List<String> pathElements = settings.name.split("/");
+
+        if (pathElements[1] == 'foodContents' && pathElements[2] != 'foodDetail') {
           return MaterialPageRoute(
-              builder: (context) =>
-                  YemekIcindekiler(int.parse(pathElemanlari[2])));
+              builder: (context) => ContentPage(
+                  int.parse(pathElements[2]), pathElements[3]));
         }
 
-        if (pathElemanlari[1] == 'yemekIcindekiler' && pathElemanlari[2] == 'yemekDetay') {
-          DetailParams parameters = settings.arguments as DetailParams;
+        if (pathElements[1] == 'foodContents' && pathElements[2] == 'foodDetail') {
+          DetailParamsModel parameters = settings.arguments as DetailParamsModel;
           return MaterialPageRoute(
-              builder: (context) => YemekDetay(parameters.categoryId, parameters.recipeId));
+              builder: (context) =>
+                  DetailPage(parameters.categoryId, parameters.recipeId));
         }
         return null;
       },

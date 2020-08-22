@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:yemek_tarif/utils/data_loader.dart';
+import 'package:yemek_tarif/utils/dataLoader.dart';
 
-import 'models/foodDetail.dart';
+import 'models/foodDetailModel.dart';
 
 // ignore: must_be_immutable
-class YemekDetay extends StatelessWidget {
+class DetailPage extends StatelessWidget {
   int categoryId;
   int detayId;
-  YemekDetay(this.categoryId, this.detayId);
-  FoodDetail secilenYemekTuru;
+  DetailPage(this.categoryId, this.detayId);
+  FoodDetailModel foodDetail;
   @override
   Widget build(BuildContext context) {
-    secilenYemekTuru = DataLoader.yemekDetay[categoryId][detayId];
+    foodDetail = DataLoader.foodDetail[categoryId][detayId];
     return Scaffold(
       body: CustomScrollView(
         primary: false,
@@ -24,22 +24,25 @@ class YemekDetay extends StatelessWidget {
             backgroundColor: Colors.orange.shade400,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                secilenYemekTuru.image,
+                foodDetail.image,
                 fit: BoxFit.cover,
               ),
               title: Text(
-                secilenYemekTuru.title,
+                foodDetail.title,
                 style: TextStyle(
                   color: Colors.white,
                 ),
+                
               ),
             ),
+            
           ),
           SliverToBoxAdapter(
             child: SingleChildScrollView(
                 child: Container(
-              padding: EdgeInsets.all(5),
-              child: Html(data: secilenYemekTuru.recipe),
+              padding: EdgeInsets.all(8),
+              child: Html(data: foodDetail.recipe),
+              
             )),
           ),
         ],
