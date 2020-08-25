@@ -1,3 +1,4 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:yemek_tarif/utils/dataLoader.dart';
 
@@ -8,10 +9,12 @@ import 'models/foodModel.dart';
 class ContentPage extends StatelessWidget {
   int categoryId;
   String categoryTitle;
-  ContentPage(this.categoryId, this.categoryTitle);
+  String volStatus;
+  ContentPage(this.categoryId, this.categoryTitle,this.volStatus);
   @override
   Widget build(BuildContext context) {
-  const String preSubtitle = DataLoader.preSubtitle;
+    AudioCache player = AudioCache();
+    const String preSubtitle = DataLoader.preSubtitle;
     List<FoodModel> foodContents = DataLoader.foodContentList[categoryId];
     return Scaffold(
       appBar: AppBar(
@@ -28,9 +31,13 @@ class ContentPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
-                onTap: () => Navigator.pushNamed(
-                    context, "/foodContents/foodDetail",
-                    arguments: DetailParamsModel(categoryId, index)),
+                onTap: () {
+                  if (volStatus=="1") {
+                    player.play('mouseclick.mp3');
+                  }
+                  Navigator.pushNamed(context, "/foodContents/foodDetail",
+                      arguments: DetailParamsModel(categoryId, index));
+                },
                 leading: Image.asset(
                   foodContents[index].image,
                   width: 64,

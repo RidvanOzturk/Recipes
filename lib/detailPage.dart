@@ -32,17 +32,14 @@ class DetailPage extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                 ),
-                
               ),
             ),
-            
           ),
           SliverToBoxAdapter(
             child: SingleChildScrollView(
                 child: Container(
               padding: EdgeInsets.all(8),
               child: Html(data: foodDetail.recipe),
-              
             )),
           ),
         ],

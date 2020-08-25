@@ -80,7 +80,7 @@ class _CategoryPageStateFulState extends State<CategoryPageStateFul> {
   List<FoodModel> foodCategories = DataLoader.foodCategoryList;
   String title = DataLoader.categoryTitle;
   String preSubtitle = DataLoader.preSubtitle;
-  bool isVolumeOn = true;
+  var isVolumeOn = true;
 
   @override
   Widget build(BuildContext context) {
@@ -102,6 +102,7 @@ class _CategoryPageStateFulState extends State<CategoryPageStateFul> {
       ),
       body: ListView.builder(
         itemBuilder: (BuildContext context, int index) {
+          var status = isVolumeOn ? "1" : "0";
           FoodModel foodCategory = foodCategories[index];
           return Card(
             color: Colors.grey.shade100,
@@ -110,11 +111,11 @@ class _CategoryPageStateFulState extends State<CategoryPageStateFul> {
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
                 onTap: () {
-                  if(isVolumeOn){
+                  if (isVolumeOn) {
                     player.play('mouseclick.mp3');
                   }
-                  Navigator.pushNamed(
-                      context, "/foodContents/$index/${foodCategory.name}");
+                  Navigator.pushNamed(context,
+                      "/foodContents/$index/${foodCategory.name}/$status");
                 },
                 leading: Image.asset(
                   foodCategory.image,

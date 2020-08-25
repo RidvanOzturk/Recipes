@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         if (pathElements[1] == 'foodContents' && pathElements[2] != 'foodDetail') {
           return MaterialPageRoute(
               builder: (context) => ContentPage(
-                  int.parse(pathElements[2]), pathElements[3]));
+                  int.parse(pathElements[2]), pathElements[3],pathElements[4]));
         }
 
         if (pathElements[1] == 'foodContents' && pathElements[2] == 'foodDetail') {
