@@ -10,7 +10,7 @@ class ContentPage extends StatelessWidget {
   int categoryId;
   String categoryTitle;
   String volStatus;
-  ContentPage(this.categoryId, this.categoryTitle,this.volStatus);
+  ContentPage(this.categoryId, this.categoryTitle, this.volStatus);
   @override
   Widget build(BuildContext context) {
     AudioCache player = AudioCache();
@@ -32,21 +32,22 @@ class ContentPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
                 onTap: () {
-                  if (volStatus=="1") {
+                  if (volStatus == "1") {
                     player.play('mouseclick.mp3');
                   }
                   Navigator.pushNamed(context, "/foodContents/foodDetail",
                       arguments: DetailParamsModel(categoryId, index));
                 },
-                leading: Image.asset(
-                  foodContents[index].image,
-                  width: 64,
-                  height: 64,
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                    foodContents[index].image,
+                  ),
+                  radius: 30,
                 ),
                 title: Text(
                   foodContents[index].name,
                   style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 21,
                       fontWeight: FontWeight.w600,
                       color: Colors.brown.shade500),
                 ),
@@ -55,7 +56,7 @@ class ContentPage extends StatelessWidget {
                   child: Text(
                     "$preSubtitle ${foodContents[index].name}...",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 14,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w400,
                         color: Colors.brown.shade400),

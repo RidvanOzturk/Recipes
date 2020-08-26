@@ -117,15 +117,14 @@ class _CategoryPageStateFulState extends State<CategoryPageStateFul> {
                   Navigator.pushNamed(context,
                       "/foodContents/$index/${foodCategory.name}/$status");
                 },
-                leading: Image.asset(
-                  foodCategory.image,
-                  width: 64,
-                  height: 64,
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(foodCategory.image),
+                  radius: 30,
                 ),
                 title: Text(
                   foodCategory.name,
                   style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 21,
                       fontWeight: FontWeight.w600,
                       color: Colors.brown.shade500),
                 ),
@@ -134,7 +133,7 @@ class _CategoryPageStateFulState extends State<CategoryPageStateFul> {
                   child: Text(
                     "$preSubtitle ${foodCategory.name}...",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 14,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w400,
                         color: Colors.brown.shade400),
