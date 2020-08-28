@@ -18,14 +18,17 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (RouteSettings settings) {
         List<String> pathElements = settings.name.split("/");
 
-        if (pathElements[1] == 'foodContents' && pathElements[2] != 'foodDetail') {
+        if (pathElements[1] == 'foodContents' &&
+            pathElements[2] != 'foodDetail') {
           return MaterialPageRoute(
-              builder: (context) => ContentPage(
-                  int.parse(pathElements[2]), pathElements[3],pathElements[4]));
+              builder: (context) => ContentPage(int.parse(pathElements[2]),
+                  pathElements[3], pathElements[4]));
         }
 
-        if (pathElements[1] == 'foodContents' && pathElements[2] == 'foodDetail') {
-          DetailParamsModel parameters = settings.arguments as DetailParamsModel;
+        if (pathElements[1] == 'foodContents' &&
+            pathElements[2] == 'foodDetail') {
+          DetailParamsModel parameters =
+              settings.arguments as DetailParamsModel;
           return MaterialPageRoute(
               builder: (context) =>
                   DetailPage(parameters.categoryId, parameters.recipeId));
