@@ -67,7 +67,7 @@ class DataLoader {
       FoodModel("Ayva Reçeli", "ayvareceli"),
       FoodModel("Vinegrete Sos", "vinegretesos"),
       FoodModel("Kırmızı Biber Turşusu", "kirmizibibertursusu"),
-      FoodModel("Portakal Reçeli","portakalreceli")
+      FoodModel("Portakal Reçeli", "portakalreceli")
     ]
   ];
 
@@ -117,7 +117,7 @@ class DataLoader {
               "<p> Hazırlanan harç, daire şeklinde açılmış olan hamurun üzerine yarım ay şeklinde ince bir tabaka halinde sürülür.</p>"
               "<p> Hamurun diğer kısmı harç sürülen tarafın üstüne kapatılarak,"
               "harcın dışarıya akmaması için yarım ay şekline gelen çiğ böreğin kenarları bir tabakla yada kapatma tırtılı ile kesilir.</p> "
-              "<p> Hazırlanan çibörekler daha önce derin bir tencerede kızdırılmış (yaklaşık 2-3 su bardağı) yağa atılarak, her iki tarafı da hafif pembeleşecek şekilde kızartılır.</p>"),
+              "<p> Hazırlanan çibörekler daha önce derin bir tencerede kızdırılmış (yaklaşık 2-3 su bardağı) yağa atılarak, her iki tarafı da hafif pembeleşecek şekilde kızartılır.</p><hr/>"),
       FoodDetailModel(
           "Ali Paşa Pilavi",
           "alipasapilavi",
@@ -141,7 +141,7 @@ class DataLoader {
               "<p> Antepfıstıklarını suda üç-beş dakika haşlayın ve kabuklarını soyun.</p>"
               "<p> Yıkayıp süzdüğünüz pirinçleri yağda kavurun. Dolmalık fıstığı ekleyip biraz daha çevirin.</p>"
               "<p> Et suyunu köftelerle ve antepfıstığı ile birlikte pirince ekleyin.</p>"
-              "<p> 15 dakika kadar kısık ateşte pişirken üzümleri ve tuzu ilave edin. Sıcak olarak servis yapın.</p>"),
+              "<p> 15 dakika kadar kısık ateşte pişirken üzümleri ve tuzu ilave edin. Sıcak olarak servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Tas Kebabı",
           "taskebabi",
@@ -166,7 +166,7 @@ class DataLoader {
               "<p> Tenceredeki malzeme suyunu çekince, kalan 1 1/2 bardak sıcak suyu koyup, yine ağır ateşte, yaklaşık 20 dakika, etler yumuşayıncaya kadar pişirin.</p>"
               "<p> Bu süre içinde, ara sıra tencerenin kapağını açıp, etlerin pişip pişmediğini kontrol edin. Gerekirse pişirme süresini uzatın.</p>"
               "<p> Bu arada kebap suyunu çekecek olursa, bir miktar sıcak su ilave edebilirsiniz.</p>"
-              "<p> Kebabın, tencereyi ateşten aldığınızda, yaklaşık 1 bardak salçası olmalıdır.</p>"),
+              "<p> Kebabın, tencereyi ateşten aldığınızda, yaklaşık 1 bardak salçası olmalıdır.</p><hr/>"),
       FoodDetailModel(
           "Erişte",
           "eriste",
@@ -181,7 +181,7 @@ class DataLoader {
               "<p> Erişteyi, tuzlu bol suda haşlayalım. Bu arada cevizleri irice dövelim.</p>"
               "<p> Bir başka tencereye tereyağını kızdıralım. Cevizi tencereye alarak kavuralım.</p>"
               "<p> Haşlanmış erişteyi cevizlere katarak karıştıralım. Sıcak olarak cevizli eriştemizi servis yapalım.</p>"
-              "<p> Not: Dilerseniz erişteye ceviz katmayıp, servis tabağında eriştenin üzerini cevizlerle süsleyebilirsiniz.</p>"),
+              "<p> Not: Dilerseniz erişteye ceviz katmayıp, servis tabağında eriştenin üzerini cevizlerle süsleyebilirsiniz.</p><hr/>"),
       FoodDetailModel(
           "Zeytinyağlı Yaprak Sarma",
           "zeytinyagliyapraksarma",
@@ -201,7 +201,7 @@ class DataLoader {
               "<p> Asma yapraklarını tuzlu kaynar suda sararıncaya kadar haşlayıp süzgece alın.</p>"
               "<p> Bir tepsinin içinde yaprakları tek tek açarak hazırladığınız iç malzemeden ortalarına ekleyip sigara şeklinde sarın.</p>"
               "<p> Tencereye dizip üzerine bir tabak kapatın. 2 su bardağı ılık su ilave edip ağır ateşte suyunu çekene kadar pişirin. Kapağı kapalı olarak soğumaya bırakın.</p>"
-              "<p> Sarmaları servis tabağına alıp üzerine 1 kaşık sızma zeytinyağı gezdirin. Limon dilimleriyle süsleyip servis yapın.</p>"),
+              "<p> Sarmaları servis tabağına alıp üzerine 1 kaşık sızma zeytinyağı gezdirin. Limon dilimleriyle süsleyip servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Çay Lokması",
           "caylokmasi",
@@ -221,7 +221,7 @@ class DataLoader {
               "<p> Orta yumuşaklıkta bir hamur oluncaya dek un katın.</p>"
               "<p> Karbonat ve tuzunu da ilave edip iyice yoğurun.</p>"
               "<p> Hamuru merdane yardımıyla 1 cm kalınlığında açıp, iki parmak eninde istediğiniz boyda şeritler kesin.</p>"
-              "<p> Kızdırılmış sıvıyağlı tavada, şeritler halindeki hamurları, kabarıp pembeleşinceye kadar kızartın.</p>"),
+              "<p> Kızdırılmış sıvıyağlı tavada, şeritler halindeki hamurları, kabarıp pembeleşinceye kadar kızartın.</p><hr/>"),
       FoodDetailModel(
           "Tavuk Sote",
           "tavuksote",
@@ -250,7 +250,7 @@ class DataLoader {
               "<p>Suyu veya tavuk suyunu sıcak olarak ekleyip 2-3 dak. pişirin.</p>"
               "<p>Tavukları tekrar tavaya koyun. Tuz katıp, domatesleri ekleyin ve l dakika orta ateşte ısıtıp servis yapın.</p>"
               "<p>Püf noktası: Bu tür kızartmanın amacı, sebe ve etleri diri bırakmaktır. </p>"
-              "<p>Bu yüzden pişirme işlemi az miktarda çok kızgın yağda yapılmalıdır.</p>"),
+              "<p>Bu yüzden pişirme işlemi az miktarda çok kızgın yağda yapılmalıdır.</p><hr/>"),
       FoodDetailModel(
           "Biftek Rulosu",
           "biftekrulosu",
@@ -276,7 +276,7 @@ class DataLoader {
               "<p>İçlerini doldurduğunuz biftekleri, margarinle hafifçe yağladığınız tepsiye dizin.</p>"
               "<p>1 çorba kaşığı salçayı, 1 su bardağı suya karıştırın. Bifteklerin üzerine dökün. </p>"
               "<p>Önceden ısıtılmış 180 derecelşk fırında 20-25 dakika pişirin. </p>"
-              "<p>Fırından çıkardıktan sonra kürdanları bifteklerden çıkarıp servis yapın.</p>")
+              "<p>Fırından çıkardıktan sonra kürdanları bifteklerden çıkarıp servis yapın.</p><hr/>")
     ],
     [
       FoodDetailModel(
@@ -299,7 +299,7 @@ class DataLoader {
               "<p>Et suyunu ekleyerek kaynatın.</p>"
               "<p>lnce ince kıyılmış dereotunu üzerine serpin.</p>"
               "<p>Dilerseniz kızdırılmış kırmızıbiber de dökebilirsiniz.</p>"
-              "<p>Kızarmış ekmekle servis yapın.</p>"),
+              "<p>Kızarmış ekmekle servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Domates Çorbası",
           "domatescorbasi",
@@ -316,7 +316,7 @@ class DataLoader {
               "<p>Bir tencerede yağı eritin, unu katarak yağda sarartın.</p>"
               "<p>Üzerine domates salçasını ve domatesleri katarak iyice öldürün.</p>"
               "<p>Yavaş yavaş et suyunu ilave edin, tuzunu da ekleyerek 10 dakika kaynatın.</p>"
-              "<p>Servis yaparken üzerini kaşar rendesi veya maydanoz ile süsleyin.</p>"),
+              "<p>Servis yaparken üzerini kaşar rendesi veya maydanoz ile süsleyin.</p><hr/>"),
       FoodDetailModel(
           "Ezogelin Çorbası",
           "ezogelincorbasi",
@@ -341,7 +341,7 @@ class DataLoader {
               "<p>Tuzunu ekip, koyulaşıncaya kadar karıştırın. </p>"
               "<p>Bir kaşık salçayla kırmızı biberi yağda çevirin. </p>"
               "<p>Üzerine gezdirip, karabiberi ve kuru naneyi serpin. </p>"
-              "<p>Sıcak sıcak servis yapın.</p>"),
+              "<p>Sıcak sıcak servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Mercimek Çorbası",
           "mercimekcorbasi",
@@ -364,7 +364,7 @@ class DataLoader {
               "<p>Süzgeçten geçirin. Ayrı bir tencerede 2 çorba kaşığı tereyağı ile unu kavurun.</p>"
               "<p>1 su bardağı suyu ilave edin. Süzülen mercimeği ve tuzu ekleyin.</p>"
               "<p>Küçük bir tavada kalan tereyağını eritin. Kırmızıbiberi yakın.</p>"
-              "<p>Çorbanın üzerine gezdirin. Limon sıkıp servis yapın.</p>"),
+              "<p>Çorbanın üzerine gezdirin. Limon sıkıp servis yapın.</p><hr/>"),
       FoodDetailModel(
           "İşkembe Çorbası",
           "iskembecorbasi",
@@ -389,7 +389,7 @@ class DataLoader {
               "<p>Kaynamakta olan işkembe suyuna azar azar ve sürekli karıştırarak dökelim.</p>"
               "<p>Doğranan işkembeleri de ekleyerek tuzunu ayarlayıp 5 dakika kaynatalım. </p>"
               "<p>Sarımsağı döverek ilave edelim.</p>"
-              "<p>Çorbayı kaselere aldıktan sonra üzerine kırmızı biberli tereyağı gezdirerek servis yapalım (arzuya göre sirke ilave edelim)</p>"),
+              "<p>Çorbayı kaselere aldıktan sonra üzerine kırmızı biberli tereyağı gezdirerek servis yapalım (arzuya göre sirke ilave edelim)</p><hr/>"),
       FoodDetailModel(
           "Kremalı Tavuk Çorbası",
           "kremalitavukcorba",
@@ -423,7 +423,7 @@ class DataLoader {
               "<p>Üzerinde limon suyu gezdirip tuz ve karabiberle tatlandırın. Sıvıyağı bir tavada kızdırıp çöp şişleri 1-2 dakika kadar pişirin.</p>"
               "<p>Maydanoz ve naneyi yıkayıp ayıklayın. Süsleme için birkaç yaprak ayırın. Kalanı sütle birlikte püre haline getirin.</p>"
               "<p>Karışımı çorbaya ilave edip 2-3 dakika daha pişirip servis tabakarına alın.</p>"
-              "<p>Çöp şişleri tabakların üzerine yerleştirip taze baharatlarla süsleyin.</p>"),
+              "<p>Çöp şişleri tabakların üzerine yerleştirip taze baharatlarla süsleyin.</p><hr/>"),
       FoodDetailModel(
           "Şehriye Çorbası",
           "sehriyecorbasi",
@@ -441,7 +441,7 @@ class DataLoader {
               "<p>Bir yandan karıştırmayı sürdürün.</p>"
               "<p>Yoksa şehriyeler birbirine yapışır. Şehriyeler pişmeye başladığında tuz ekleyin.</p>"
               "<p>Kısa bir süre daha pişirin. Tel şehriye çorbanız hazır.</p>"
-              "<p>Dilerseniz maydanoz ve limonla servis yapabilirsiniz. Afiyet olsun!</p>"),
+              "<p>Dilerseniz maydanoz ve limonla servis yapabilirsiniz. Afiyet olsun!</p><hr/>"),
     ],
     [
       FoodDetailModel(
@@ -463,7 +463,7 @@ class DataLoader {
               "<p>Diğer tarafta bir kaba 4 yumurtayı kırıp çatalla iyice çırpınız.</p>"
               "<p>Yumurtaya yarım litre sütü, tuzu, karabiberi koyup, tepsideki makarnaların üzerine gezdirerek dökünüz.</p>"
               "<p>En üstüne erimiş 1 kaşık yağı gezdirerek dökünüz.</p>"
-              "<p>Sonra çıkartıp, hafif soğuyunca kare veya baklava şeklinde kesip servis yapınız.(isteğe bağlı)</p>"),
+              "<p>Sonra çıkartıp, hafif soğuyunca kare veya baklava şeklinde kesip servis yapınız.(isteğe bağlı)</p><hr/>"),
       FoodDetailModel(
           "Çiçek Böreği",
           "cicekboregi",
@@ -484,7 +484,7 @@ class DataLoader {
               "<p>Yuvarlak parçaların orta yerine parmağımız ile bastıralım.</p>"
               "<p>Çiçek şeklini alan parçaların bütünlüğünü bozmadan bol, kızgın yağda kızartalım.</p>"
               "<p>Fazla yağını süzmek için kağıt mutfak havlusunun üzerine çıkaralım.</p>"
-              "<p>Sıcak olarak servis yapalım.</p>"),
+              "<p>Sıcak olarak servis yapalım.</p><hr/>"),
       FoodDetailModel(
           "Evişi Lahmacun",
           "lahmacun",
@@ -518,7 +518,7 @@ class DataLoader {
               "<p>Bunun için, bir kapta domatesi, soğanı, kıymayı, maydanozu, sivribiberi, sarmısağı, tuz ve karabiberi iyice karıştırın.</p>"
               "<p>Hazırladığınız harcı, açtığınız hamurların üzerine yayın. </p>"
               "<p>Ancak hamurların kenarında 1 cm kadar boşluk kalmalı. Unladığınız fırın tepsisine lahmacunları dizin.</p>"
-              "<p>Önceden 220 derecede ısıttığınız fırına koyduğunuz lahmacunları 15 dakika sonra çıkarabilirsiniz.</p>"),
+              "<p>Önceden 220 derecede ısıttığınız fırına koyduğunuz lahmacunları 15 dakika sonra çıkarabilirsiniz.</p><hr/>"),
       FoodDetailModel(
           "Kıymalı Burma Börek",
           "kiymaliburmaborek",
@@ -544,7 +544,7 @@ class DataLoader {
               "<p>Elinizle büzerek çıkarın. </p>"
               "<p>Fırın kabına döndürerek döşeyin. </p>"
               "<p>Üzerine yumurta sarısı sürün. </p>"
-              "<p>Sıvı yağı gezdirip fırına verin.</p>"),
+              "<p>Sıvı yağı gezdirip fırına verin.</p><hr/>"),
       FoodDetailModel(
           "Lazanya",
           "lazanya",
@@ -573,7 +573,7 @@ class DataLoader {
               "<p><strong>  SOSUN TARİFİ</strong></p>"
               "<p>Unu, pembeleşene kadar tereyağında kavurun.</p>"
               "<p>Süt ve tuz koyup karıştırarak muhallebi kıvamında pişirin. </p>"
-              "<p>Kaşar peynirini de ekledikten sonra tencereyi ocaktan indirin.</p>"),
+              "<p>Kaşar peynirini de ekledikten sonra tencereyi ocaktan indirin.</p><hr/>"),
       FoodDetailModel(
           "Bulgur Pilavı",
           "bulgurpilavi",
@@ -591,7 +591,7 @@ class DataLoader {
               "<p>Pilavı ateşten alın. Kapağını açıp tencereninüzerini kağıt havlu ile kaplayın ve kapağını tekrar kapatın.</p>"
               "<p>Pilavı bu şekilde 20 dakika dinlendirin.</p>"
               "<p>Tahta spatula veya kevgirle, bulguru fazla ezmemeye özen göstererek bir kez karıştırın.</p>"
-              "<p>Sıcak olarak servis yapın.</p>"),
+              "<p>Sıcak olarak servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Mantı",
           "manti",
@@ -614,7 +614,7 @@ class DataLoader {
               "<p>Mantıları önceden ısıtılmış çukur tabaklara aktarın.</p>"
               "<p>Üzerlerine ılık yoğurt sosunu dökün. Küçük bir sahanda kalan 2 çorba kaşığı margarini eritin.</p>"
               "<p>Yağ kızınca kırmızıbiberi ekleyip iyice karıştırın.</p>"
-              "<p>Biberli yağı yoğurt sosunun üzerine gezdirip, mantıyı sıcak olarak servis yapın.</p>"),
+              "<p>Biberli yağı yoğurt sosunun üzerine gezdirip, mantıyı sıcak olarak servis yapın.</p><hr/>"),
     ],
     [
       FoodDetailModel(
@@ -645,7 +645,7 @@ class DataLoader {
               "<p>Daha sonra enine yedi eşit dikdörtgen olacak şekilde altı kere keselim (toplam 14 parça elde etmiş olacak).</p>"
               "<p>Her parçayı spatula yardımı ile kıvırarak kaldırın.</p>"
               "<p>Servis tabağına rulo şeklinde dizerek servis yapın.</p>"
-              "<p>Afiyet olsun.</p>"),
+              "<p>Afiyet olsun.</p><hr/>"),
       FoodDetailModel(
           "Burma Kadayıf",
           "burmakadayif",
@@ -670,7 +670,7 @@ class DataLoader {
               "<p>Fazla yağı tepsiyi eğerek dökün.</p>"
               "<p>Burma kadayıfı önceden ısıtılmış 180 dereceye ayarlanmış fırında 15 dak. pişirin.</p>"
               "<p>Aynı tepside ters yüz ederek 10 dak. da diğer yüzünü pişirin. </p>"
-              "<p>Sıcak şerbeti üzerine dökün ve şerbetini çektikten sonra servis edin.</p>"),
+              "<p>Sıcak şerbeti üzerine dökün ve şerbetini çektikten sonra servis edin.</p><hr/>"),
       FoodDetailModel(
           "İrmik Helvası",
           "irmikhelvasi",
@@ -685,7 +685,7 @@ class DataLoader {
               "<p><b>  İrmik Helvası Tarifi'nin Yapılışı:</b></p>"
               "<p>Tencerede yağı eritip, irmik ve fıstığı içine katın. Tahta kaşıkla devamlı karıştırarak orta hararetli ateşte 35-40 dakika kadar kavurun.</p>"
               "<p>Üzerine kaynar su ya da süt döküp, bir iki kere karıştırın, sonra vanilya ve şekeri de ilave edin, tencerenin ağzını kapatıp, çok hafif ateşte biraz pişirin.</p>"
-              "<p>Sonra ateşi söndürüp demlenmeye bırakın, servis yaparken üzerini fıstık veya bademle süsleyip tarçın serpin.</p>"),
+              "<p>Sonra ateşi söndürüp demlenmeye bırakın, servis yaparken üzerini fıstık veya bademle süsleyip tarçın serpin.</p><hr/>"),
       FoodDetailModel(
           "Kabak Tatlısı",
           "kabaktatlisi",
@@ -699,7 +699,7 @@ class DataLoader {
               "<p>2. Yayvan bir tencereye, bir sıra kabak üzerine şeker, bir sıra kabak yine üzerine şeker şeklinde dizilir.</p>"
               "<p>Kapağı kapatılır, 3-4 saat şeker eriyinceye kadar bekletilir. </p>"
               "<p>3. Ateşe konur, kapağı kapalı olarak yumuşayıncaya ve suyunu çekinceye kadar hafif ateşte pişirilir.</p>"
-              "<p>4. Soğuduktan sonra, servis tabağına alınır, üzerine çekilmiş ceviz konur.</p>"),
+              "<p>4. Soğuduktan sonra, servis tabağına alınır, üzerine çekilmiş ceviz konur.</p><hr/>"),
       FoodDetailModel(
           "Beyaz Çikolatalı Parfe",
           "beyazcikolataliparfe",
@@ -732,7 +732,7 @@ class DataLoader {
               "<p>Ateşten alıp çikolata ve balı ekleyin, karıştırarak ılıtın. </p>"
               "<p>Parfeyi servis tabağına çevirerek kalıptan çıkarın.</p>"
               "<p>Streç folyoyu üzerinden alıp suya batırılmış keskin bir bıçakla dilimleyin. </p>"
-              "<p>Üzerini çikolata ile süsleyip hemen sevis yapın.</p>"),
+              "<p>Üzerini çikolata ile süsleyip hemen sevis yapın.</p><hr/>"),
       FoodDetailModel(
           "Çikolatalı Sufle",
           "cikolatalisufle",
@@ -758,7 +758,7 @@ class DataLoader {
               "<p>Hazırladığınız hamur karıştırmaya devam ederek yumurta aklarının üzerine ilave edin.</p>"
               "<p>Sufle kaplarını yağlayıp, bir miktar şeker serpin. Hazırladığınız hamur bu kaplara doldurun.</p>"
               "<p>Sufleyi önceden ısıtılmış 240 dereceli fırında 25 dakika pişirin.</p>"
-              "<p>Üstüne pudra şekeri serperek, servis yapın.</p>"),
+              "<p>Üstüne pudra şekeri serperek, servis yapın.</p><hr/>"),
     ],
     [
       FoodDetailModel(
@@ -783,7 +783,7 @@ class DataLoader {
               "<p>Doğranmış dereotunu ilave edin.</p>"
               "<p>Püre haline gelen karışımı yayvan bir tepsiye döküp soğumaya bırakın.</p>"
               "<p>Favayı kare veya üçgen şekilde kesin.</p>"
-              "<p>Üzerine limon ve zeytinyağı döküp dereotu ile süsleyerek servis yapın.</p>"),
+              "<p>Üzerine limon ve zeytinyağı döküp dereotu ile süsleyerek servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Havuç Tarator",
           "havuctarator",
@@ -801,7 +801,7 @@ class DataLoader {
               "<p>Rendelediğiniz havuçları bir tavada yağda 10 dakika kavurun.</p>"
               "<p>Bir kaba alarak soğumaya bırkın. </p>"
               "<p>Soğuyan havuca ufak ufak doğradığınız dereotunu, sarımsağı, tuzu, mayonezi, yoğurdu ve en son fındığı ekleyerek karıştırın.</p>"
-              "<p>Karışımı bir kaba alarak üzerini fındık ekleyerek servis edebilirsiniz.</p>"),
+              "<p>Karışımı bir kaba alarak üzerini fındık ekleyerek servis edebilirsiniz.</p><hr/>"),
       FoodDetailModel(
           "Kısır",
           "kisir",
@@ -826,7 +826,7 @@ class DataLoader {
               "<p>Üzerine bulgurun hizasından biraz az olacak şekilde sıcak su koyun.</p>"
               "<p>Tencerenin kapağını kapatıp, bulgurun suyu çekmesi için bekletin.</p>"
               "<p>Bulgur soğuduktan sonra ince kıyılmış taze soğan, maydanoz, dereotu, nane, domates, biber salçası, tuz, karabiber, kırmızıbiber, pulbiber, zeytinyağı ve limon suyunu ekleyip karıştırın.</p>"
-              "<p>Kısırı salata yaprakları içinde servis yapın.</p>"),
+              "<p>Kısırı salata yaprakları içinde servis yapın.</p><hr/>"),
       FoodDetailModel(
           "Patates Püresi",
           "patatespuresi",
@@ -846,7 +846,7 @@ class DataLoader {
               "<p>Hemen üzerine tereyağı ve dilerseniz lezzetini arttırmak için kaşar peyniri ekleyin.</p>"
               "<p>Püre haline gelene kadar çatal ile iyice ezin. Ya da blender ile karıştırın.</p>"
               "<p>Son olarak pürenin üzerine sütü dökün. İyice karıştırın.</p>"
-              "<p>Afiyet olsun!</p>"),
+              "<p>Afiyet olsun!</p><hr/>"),
       FoodDetailModel(
           "Pembe Sultan",
           "pembesultan",
@@ -861,7 +861,7 @@ class DataLoader {
               "<p>Kabuğunu soyun.</p>"
               "<p>Pancarın yarısını rendenin kalın tarafı, yarısını ise ince tarafıyla rendeleyin.</p>"
               "<p>İçine yoğurt, ezilmiş sarımsak ve tuzu ekleyip karıştırın.</p>"
-              "<p>Servis tabağına alıp istediğiniz şekilde süsleyerek servis yapın.</p>"),
+              "<p>Servis tabağına alıp istediğiniz şekilde süsleyerek servis yapın.</p><hr/>"),
     ],
     [
       FoodDetailModel(
@@ -874,7 +874,7 @@ class DataLoader {
               "<li>1 çay bardağı dövülmüş ceviz</li></ul>"
               "<p><b>Acılı Cevizli Sos Tarifi'nin Yapılışı:</b></p>"
               "<p>Salça ve cevizi karıştırın. Karışımı mayoneze ilave edin.</p>"
-              "<p>Acılı cevizli sosu, sandviçlere sürebilir, haşlanmış etlerin yanında servis yapabilirsiniz.</p>"),
+              "<p>Acılı cevizli sosu, sandviçlere sürebilir, haşlanmış etlerin yanında servis yapabilirsiniz.</p><hr/>"),
       FoodDetailModel(
           "Biber Turşusu",
           "bibertursusu",
@@ -890,7 +890,7 @@ class DataLoader {
               "<p>Yalnız salamuranın tuz miktarı biraz daha az olmalıdır.</p>"
               "<p>Tartıyla yapılacaksa. sonuçta tuz oranı %4 olacak şekilde hesaplanmalı; önceden hazır salamura kullanılacaksa, salamuranın tuz oranı %7-8 olmalıdır.</p>"
               "<p>Biber turşusunun yenilecek olgunluğa geldiği, tad ve kokudaki değişme ve yeşil rengin tam sarıya dönmesi ile anlaşılır.</p>"
-              "<p>Biber turşusu. sade olarak hazırlanıp yenilebildiği gibi, hıyar ve domatesle birlikte, karışık olarak da kurulabilir.</p>"),
+              "<p>Biber turşusu. sade olarak hazırlanıp yenilebildiği gibi, hıyar ve domatesle birlikte, karışık olarak da kurulabilir.</p><hr/>"),
       FoodDetailModel(
           "Ayva Reçeli",
           "ayvareceli",
@@ -899,7 +899,14 @@ class DataLoader {
               "<li>1.5 kilo ayva</li>"
               "<li>5 su bardağı su</li>"
               "<li>1.5 kilo toz şeker</li>"
-              "<li>2 çorba kaşığı limon suyu</li></ul>"),
+              "<li>2 çorba kaşığı limon suyu</li></ul>"
+              "<p><b>  Ayva Reçeli Tarifi'nin Yapılışı:</b></p>"
+              "<p>Ayvaların kabuklarını soyup, kalın delikli bir rendeyle çekirdek yataklarını bozmayacak şekilde rendeleyin.</p>"
+              "<p>Ayvaları suya koyup, 5 -6 dakika kadar haşlayın. Sonra toz şekeri katın ve karıştırarak eritin.</p>"
+              "<p>Şeker eridikten sonra, orta ateşte koyulaşıncaya dek kaynatın.</p>"
+              "<p>Reçel kıvamını bulduğunda, 2 çorba kaşığı limon suyunu katıp, biraz karıştırın. </p>"
+              "<p>Bir taşım kaynatıldıktan sonra tencereyi ateşten alıp, soğumaya bırakın. Daha sonra cam kavanozlara boşaltın.</p>"
+              "<p>Soğuduğunda kavanozların kapaklarını kapatıp, serin bir yerde muhafaza edin.</p><hr/>"),
       FoodDetailModel(
           "Vinegrete Sos",
           "vinegretesos",
@@ -912,7 +919,7 @@ class DataLoader {
               "<p><b>  Vinegrete Sos Tarifi'nin Yapılışı:</b></p>"
               "<p>Tuz ve beyazbiberi bir kaba koyun. Sirkeyi ilave edip bir telle çırparak iyice karıştırın.</p>"
               "<p>Yağı, telle çırpmaya devanı ederek akıtıp sirkelil karışıma yedirin.</p>"
-              "<p>Kullanmadan önce bekletecek olursanız, yağ ve sirke zamanla ayrışacağı için, tekrar iyice karıştırın.</p>"),
+              "<p>Kullanmadan önce bekletecek olursanız, yağ ve sirke zamanla ayrışacağı için, tekrar iyice karıştırın.</p><hr/>"),
       FoodDetailModel(
           "Kırmızı Biber Turşusu",
           "kirmizibibertursusu",
@@ -934,7 +941,7 @@ class DataLoader {
               "<p>Hepsini harmanlayarak kavanoza dolduralım. Ayrı bir tabağa sirkeyi, limon suyunu ve turşu tuzunu karıştıralım.</p>"
               "<p>Tuz eriyene kadar bir kaşık yardımıyle karıştıralım.</p>"
               "<p>Sıvı yağı da ilave ederek kavanozun içine dökelim. Kavanozun ağzını kapatalım.</p>"
-              "<p>Not: Turşuyu kışa kadar saklayacaksanız, buzdolabında muhafaza edin.</p>"),
+              "<p>Not: Turşuyu kışa kadar saklayacaksanız, buzdolabında muhafaza edin.</p><hr/>"),
       FoodDetailModel(
           "Portakal Reçeli",
           "portakalreceli",
@@ -954,7 +961,7 @@ class DataLoader {
               "<p>Sonra içine doğradığınız portakal parçalarını atın ve reçel iyice koyulaşıncaya dek kaynatın.</p>"
               "<p>Daha sonra iki çorba kaşığı limon suyunu karışıma ilave edip karıştırın.</p>"
               "<p>Reçeli bir taşım daha kaynatın ve ateşten alıp soğumaya bırakın.</p>"
-              "<p>Daha sonra cam kavanozlara boşaltın, soğuduğunda kavanozların kapaklarını kapatıp, serin bir yerde muhafaza edin.</p>")
+              "<p>Daha sonra cam kavanozlara boşaltın, soğuduğunda kavanozların kapaklarını kapatıp, serin bir yerde muhafaza edin.</p><hr/>")
     ]
   ];
 }
